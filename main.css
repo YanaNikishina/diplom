@@ -1,0 +1,125 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+* {
+	box-sizing: border-box;
+}
+body{
+    font-family:'Roboto', sans-serif;
+    margin: 0;
+}
+.conteiner{
+    margin-left: 120px;
+    padding-top: 30px; 
+    margin-right: 120px; 
+}
+.logo img{
+    width:170px ;
+    height: 90px;
+    background-size: 100%;
+}
+header{
+    margin-top:0;
+    height: 600px;
+    background: url(img/Фон_1.svg);
+    background-size: 100%;
+}
+.text_IT{
+
+    width: 540;
+}
+h1{
+    width: 570px;
+    padding-top:30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 110%;
+    color: #02014A;
+}
+.text_p{
+    width: 570px;
+    font-size: 20px;
+    line-height: 130%;
+    color: #02014A;
+    font-weight: 300;
+}
+.btn_form{
+    padding-top: 30px;
+}
+.btn{
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    height: 47px;
+    width: 210px;
+    background-color: #6E17F2;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn:hover{
+    transform: scale(1.1);  
+    background-color: #FEC000;
+}
+.btn_text{
+    color: #FFFFFF;
+    margin-top: 13px;
+    /* font-family: 'Roboto', serif; */
+    font-size: 16px;
+    font-weight: 100;
+    font-weight: lighter;
+}
+.h2{
+    margin-top: 0px;
+    color: #02014A;
+    font-size: 40px;
+}
+.text_s1{
+    color: #02014A;
+    font-size: 16px;
+    width: 590px;
+    font-weight: normal;
+}
+.typ_jobs{
+    
+    margin-top: 50px;
+    color: #02014A;
+    font-size: 18px;
+    width: 900px;
+}
+
+.tj_1, .tj_2, .tj_3, .tj_4, .tj_5, .tj_6{
+    width: 230px;
+    height: 100px;
+    display: inline-block;
+    padding-left: 20px;
+    margin-top: 10px;
+    font-weight: lighter;
+
+}
+.job_1, .job_2, .job_3, .job_4, .job_5, .job_6{
+    width: 290px;
+    display: inline-block;
+} 
+.icon_1, .icon_2,.icon_3,.icon_4,.icon_5,.icon_6{
+    float: left;
+}
+.icon_3,.icon_4,.icon_5,.icon_6{
+    margin-top: 15px;
+}
+
+.footer_fon{
+    margin-top:0;
+    height: 450px;
+    background: url(img/Footer.svg);
+    background-size: 100%;
+}
+
+/* .footer_fon2{
+    margin-top:0;
+    height: 78px;
+    background-color: #43435A;
+    background-size: 100%;
+} */

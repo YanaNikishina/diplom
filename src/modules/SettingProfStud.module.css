@@ -1,0 +1,126 @@
+.big_conteiner{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.body {
+    font-family: "Gilroy", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: auto;
+    height: auto;
+    background-color: #F9F6FD;
+    
+}
+.massg{
+    position: absolute;
+    width: 100%;
+    color: #FFFFFF;
+    background-color:#6E17F2 ;
+    
+}
+.text_massg{
+    margin: 7px 0px;
+    width: 100%;
+    
+}
+.text_hi{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 370px;
+    color: #02014A;
+    font-size: 28px;
+    font-weight:bold;
+}
+.text{
+    position: absolute;
+    text-align: left;
+    margin-top: 160px;
+    margin-left: 370px;
+    color: #02014A;
+    font-size: 16px;
+    width: 680px;
+
+}
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 140px;
+    margin-left: 360px;
+    margin-right: 20px;
+}
+.dip_h2{
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 12px;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+    border-radius: 16px;
+    width: 600px;
+    height: 30px;
+    font-size: 16px;
+    font-weight:600 ;
+    color: #02014A;
+}
+.dip_box2{
+    background-color: #FFFFFF;
+    height: auto;
+    padding-bottom: 30px;
+    width: 630px;
+    border-radius: 16px;
+}
+.dip_text1{
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 30px;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight:400 ;
+    color: #02014A;
+}
+.input_fio {
+    margin-left: 30px;
+    margin-top: 15px;
+    width: 374px;
+    height: 35px;
+    opacity: 0.5;
+    border-radius: 8px;
+    border: 1px solid rgb(118, 118, 118);
+}
+.input_numb, .input_mail {
+    margin-left: 30px;
+    margin-top: 7px;
+    width: 374px;
+    height: 35px;
+    opacity: 0.5;
+    border-radius: 8px;
+    border: 1px solid rgb(118, 118, 118);
+}
+.btn{
+    display: flex;
+    cursor: pointer;
+    font-family:  "Gilroy", sans-serif ;
+    margin-left: 30px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    width: 120px;
+    height: 35px;
+    color: #FFFFFF;
+    background-color:#6E17F2 ;
+    outline: none;   
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+.txakk{
+    font-size: 14px;
+    font-weight:200px;
+    margin-top: 7px;
+    margin-left: 20px;
+
+}

@@ -1,0 +1,170 @@
+
+.big_conteiner{
+    display: flex;
+
+}
+.body {
+    font-family: "Gilroy", sans-serif;
+    margin: 0;
+    width: auto;
+}
+
+.header{
+    position: absolute;
+    padding-left: 90px;
+    padding-top: 40px;
+    width: auto;
+}
+
+.conteiner_1{
+    background-image:url('../img/Group_913.svg');
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 60%;
+    order: 2;
+}
+
+.conteiner_2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 50%;
+    padding-left: 0px;
+    margin-left: 90px;
+    order: 1;
+}
+
+.text{
+    /* position: absolute; */
+    margin-top: 270px;
+    margin-left: 160px;
+    color: #02014A;
+    background-color: #FFFFFF;
+    height: 162px;
+    width: 460px;
+    border-radius: 16px;
+}
+
+.bigtext{
+    margin: 0;
+    padding-top: 30px;
+    font-size: 39px;
+    font-weight: bold;
+}
+
+.smoltext{
+    font-size: 26px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-bottom: 8px;
+}
+/* .text_quest{
+    margin-top:20px;
+    margin-left: 240px;
+} */
+
+.text_A{
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 290px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.text_B{
+    color: #FFFFFF;
+    margin-top:0px;
+    margin-left: 270px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.btn_2{
+    cursor: pointer;
+    border: none;
+    margin-left: 300px;
+    font-family:  "Gilroy", sans-serif ;
+    border-radius: 8px;
+    width: 191px;
+    height: 40px;
+    color: #FFFFFF;
+    background-color:#FEC000 ;
+    outline: none; 
+}
+
+.btn_2:hover{
+    transform: scale(1.1);
+}
+
+.h1{
+    width: 233px;
+    color: #02014A;
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 130px;
+    margin-bottom: 0px;
+}
+.text_vvod{
+    color: #02014A;
+    opacity: 0.95;
+    font-size: 16px;
+    font-weight: 500;
+    width: 327px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+
+}
+
+.input_mail, .input_pass {
+    margin-left: 0px;
+    margin-top: 7px;
+    width: 374px;
+    height: 41px;
+    opacity: 0.5;
+    border-radius: 8px;
+    border: 1px solid rgb(118, 118, 118);
+}
+
+.forgot_pass{
+    color: #02014A;
+    opacity: 0.95;
+    font-size: 14px;
+    width: 113px;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+.btn{
+    display: flex;
+    cursor: pointer;
+    font-family:  "Gilroy", sans-serif ;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    width: 120px;
+    height: 40px;
+    color: #FFFFFF;
+    background-color:#6E17F2 ;
+    outline: none;
+    
+}
+
+.btn:hover{
+    transform: scale(1.1);
+ }
+
+.txakk2{
+font-size: 16px;
+font-weight: 200px;
+}
+
+.txakk{
+    font-size: 14px;
+    font-weight:200px;
+    margin-top: 10px;
+    margin-left: 35px;
+
+}
+

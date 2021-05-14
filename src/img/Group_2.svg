@@ -1,0 +1,8 @@
+<svg width="500" height="333" viewBox="0 0 500 333" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="500" height="304" rx="16" fill="white"/>
+<circle opacity="0.5" cx="462" cy="42" r="15" fill="#6E17F2"/>
+<circle opacity="0.3" cx="447" cy="55" r="8" fill="#6E17F2"/>
+<path opacity="0.5" d="M104 304C104 296.309 100.892 288.932 95.3596 283.494C89.8273 278.055 82.3239 275 74.5 275C66.6761 275 59.1727 278.055 53.6404 283.494C48.108 288.932 45 296.309 45 304L74.5 304H104Z" fill="#6E17F2"/>
+<circle opacity="0.35" cx="38.5" cy="259.5" r="11.5" fill="#6E17F2"/>
+<circle opacity="0.2" cx="62" cy="233" r="6" fill="#6E17F2"/>
+</svg>

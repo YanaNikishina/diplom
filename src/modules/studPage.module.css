@@ -1,0 +1,184 @@
+.big_conteiner{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+
+}
+.body {
+    font-family: "Gilroy", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: auto;
+    height: auto;
+    background-color: #F9F6FD;
+    
+}
+.massg{
+    position: absolute;
+    width: 100%;
+    color: #FFFFFF;
+    background-color:#6E17F2 ;
+    
+}
+.text_massg{
+    margin: 7px 0px;
+    width: 100%;
+    
+}
+.text_hi{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 370px;
+    color: #02014A;
+    font-size: 28px;
+    font-weight:bold;
+}
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    margin-top: 140px;
+    margin-left: 360px;
+    margin-right: 20px;
+}
+
+.box_1, .box_4{
+    display: flex;
+
+    
+}
+
+.subject, .contacts{
+    margin-right: 20px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    text-align: left;
+    width: 310px;
+    height: 140px;
+}
+.subject{
+    display: flex;
+    
+}
+.stud_box{
+    display: flex;
+    flex-direction: column;
+}
+.contacts_text1, .dip_guid_text1, .class_guid_text1, .dep_man_text1, .term_text1, .percent_text1{ 
+    margin-top: 17px;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight:500 ;
+    color: #78788B;
+}
+
+.subject_text2{
+    margin-top: 30px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight:700 ;
+    color: #02014A;
+}
+.subject_text3{
+    margin-bottom: 0;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight:500 ;
+    color: #78788B;
+}
+.contacts_photo2{
+    width: 70px;
+    height: 70px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.contacts_text2,.contacts_text3{ 
+    margin-bottom: 0;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight:700 ;
+    color: #02014A;
+}
+.contacts{
+    display: flex;
+}
+.contacts_text1{
+    margin-bottom: 20px;
+}
+.contacts_text3{
+    margin-top: 0;
+    float: left
+}
+.sp_cont_t1,.sp_cont_t2{
+    font-size: 14px;
+    margin-left: 15px;
+    font-weight: 400;
+}
+.sp_cont_t1{
+    margin-left: 25px;
+}
+.contacts_photo{
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+.percent{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 16px;
+    text-align: left;
+    width: 480px;
+    height: 300px;
+    background-image: url('../img/Group_2.svg');
+}
+.term{
+    background-color: #FFFFFF;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 16px;
+    text-align: left;
+    width: 310px;
+    height: 300px;
+}
+.box_term{ 
+    margin-top: 30px;
+    margin-left: 30px;    
+}
+.box_term1,.box_term2{
+    display: flex;
+    flex-direction: column;
+}
+.term_text2 {
+    margin-bottom: 3px;
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #02014A;
+}
+
+.percent_img{
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 70px;
+    height: 70px;
+}
+.percent_text2{
+    font-size: 16px;
+    font-weight: 400;
+    width: 200px;
+    margin-left: 60px;
+    color: #02014A;
+}
+.circularProgressbar{
+    margin-left: -150px;
+    margin-top: 60px;
+    height: 210px;
+    width: 210px;
+    font-family: "Gilroy", sans-serif;
+}

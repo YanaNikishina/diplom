@@ -1,0 +1,153 @@
+.big_conteiner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+
+}
+.body {
+    font-family: "Gilroy", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: auto;
+    height: auto;
+    background-color: #F9F6FD;
+    
+}
+.massg{
+    position: absolute;
+    width: 100%;
+    color: #FFFFFF;
+    background-color:#6E17F2 ;
+    
+}
+.text_massg{
+    margin: 7px 0px;
+    width: 100%;
+    
+}
+.text_hi{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 370px;
+    color: #02014A;
+    font-size: 28px;
+    font-weight:bold;
+}
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    margin-top: 140px;
+    margin-left: 360px;
+    margin-right: 20px;
+}
+.dip_h2{
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 12px;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+    border-radius: 16px;
+    width: 550px;
+    height: 30px;
+    font-size: 16px;
+    font-weight:600 ;
+    color: #02014A;
+}
+.dip_box2{
+    background-color: #FFFFFF;
+    height: auto;
+    padding-bottom: 30px;
+    width: 100%;
+    border-radius: 16px;
+}
+.dip_text{
+    text-align: left;
+    padding-left: 15px;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight:600 ;
+    color: #02014A;
+    margin-bottom: 0;
+}
+.dip_text1{
+
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 40px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight:400 ;
+    color: #02014A;
+}
+.subject{
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    text-align: left;
+    width: 500px;
+    height: 310px;
+}
+.subject_text1{ 
+    margin-top: 17px;
+    margin-left: 18px;
+    font-size: 15px;
+    font-weight:500 ;
+    color: #78788B;
+}
+.subject_text2{ 
+    margin-bottom: 0;
+    margin-left: 18px;
+    font-size: 18px;
+    font-weight:700 ;
+    color: #02014A;
+}
+.check1{
+    text-align: left;
+    margin-top: 20px;
+    width: 450px;
+    height: 310px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+.divbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.div_content{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.boxflex{
+    margin-top: 70px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.contacts_photo{
+    margin-top: 60px;
+    width: 100px;
+    height: 100px;
+}
+.dip_text2{
+    margin-bottom: 15px;
+    margin-top: 0;
+    font-size: 16px;
+    color: #02014A;
+    text-transform: uppercase;
+}
+.dip_text3{
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: 16px;
+    color: #02014A;
+}
+.dip_text4{
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 18px;
+    color: #02014A;
+}

@@ -30,6 +30,7 @@ import { InstructDR } from './pages/InstructionDR';
 import { DocumentsPU } from './pages/DocumentPU';
 import { FAQPU } from './pages/FAQPU';
 import { Zakaz } from './pages/Zakaz';
+import { LandPag } from './pages/LandingPage';
 
 export const useRoutes = () => {
 
@@ -131,6 +132,10 @@ export const useRoutes = () => {
             </Route>
             <Route path={'/pages/Zayavki'} exact>
                 <Zakaz/>
+            </Route>
+
+            <Route path={'/pages/LandingPage'} exact>
+                <LandPag/>
             </Route>
         </Switch>
 

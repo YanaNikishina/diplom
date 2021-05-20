@@ -14,7 +14,6 @@ export const Registr = () => {
         maill: '',
         pas: '',
         сheck: 'false'
-
     })
 
     const changeInputHandler1 = (event) => {

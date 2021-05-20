@@ -40,7 +40,9 @@ export const ForgotPass =() =>{
                         <input type="text" name="gmaill" 
                         onChange={changeInputHandler} value={form3.email} 
                         className={`${styles.input} ${styles.input_mail}`} placeholder=" E-mail"/>
+                        <Link className={styles.link} to ={'/pages/Dashboard'}>
                         <button  onClick={send3}  className ={styles.btn}><span className ={styles.txakk}>Сменить пароль</span></button> 
+                        </Link>
                     </form> 
 
             </div>

@@ -38,7 +38,7 @@ export const LandPag=()=>{
                     группы студентов для реализации ваших задач.</p>
                     </div>
                     <form className={styles.btn_form}>
-                        <button className={styles.btn}>
+                        <button className={styles.btn2}>
                             <p className={styles.btn_text}>Оставить заявку</p>
                         </button>
                     </form>

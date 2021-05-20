@@ -107,6 +107,7 @@
     font-weight:600 ;
     color: #02014A;
     margin-bottom: 0;
+    width: 400px;
 }
 .dip_text1{
     width: 920px;
@@ -117,4 +118,14 @@
     font-size: 14px;
     font-weight:400 ;
     color: #02014A;
+}
+.box_red{
+    display: flex;
+
+    
+}
+.del{
+    margin-left: 500px;
+    margin-top: 15px;
+    width: 20px;
 }

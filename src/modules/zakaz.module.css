@@ -48,10 +48,10 @@
 .conteiner{
     display: flex;
     justify-content: space-between;
-    margin-top: 230px;
+    margin-top: 170px;
     margin-left: 360px;
     margin-right: 20px;
-    min-height: 700px;
+    min-height: 780px;
 
 }
 
@@ -124,17 +124,18 @@
 }
 .del{
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left: 500px;
     width: 24px;
     height: 24px;
 }
-.red{
-    margin-top: 15px;
-    margin-left: 400px;
-    width: 24px;
-    height: 24px;   
-}
 
+
+.text{
+    margin-top: -15px;
+    margin-left: 0px;
+    font-size: 14px;
+    color: #78788B;
+}
 
 .input_text {
     

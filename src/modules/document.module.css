@@ -1,23 +1,20 @@
 .big_conteiner{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    
-
 }
 .body {
     font-family: "Gilroy", sans-serif;
     display: flex;
     flex-direction: column;
     margin: 0;
-    width: auto;
+    width: 1349px;
     height: auto;
     background-color: #F9F6FD;
     
 }
 .massg{
     position: absolute;
-    width: 100%;
+    width: 1349px;
     color: #FFFFFF;
     background-color:#6E17F2 ;
     
@@ -49,7 +46,6 @@
     background-color: #FFFFFF;
     text-transform: uppercase;
     border-radius: 16px;
-    width: 550px;
     height: 30px;
     font-size: 16px;
     font-weight:600 ;
@@ -62,31 +58,50 @@
     width: 100%;
     border-radius: 16px;
 }
-.dip_text{
-    text-align: left;
-    padding-left: 15px;
-    border-radius: 16px;
-    font-size: 16px;
-    font-weight:600 ;
-    color: #02014A;
-    margin-bottom: 0;
-}
 .dip_text1{
-
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: left;
     padding-left: 40px;
     border-radius: 16px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight:400 ;
     color: #02014A;
+}
+.doc{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    justify-content: space-around;
+}
+.icon{
+    display: flex;
+    border-radius: 8px;
+    width: 380px;
+    height: 46px;
+    background-color: #F6F7FA;
+    margin-bottom: 10px;
+}
+.icon_photo{
+    margin-top: 8px;
+    margin-left: 10px;
+    width: 20;
+    height: 30px;
+}
+.dip_text{
+    margin-top: 15px;
+    text-align: left;
+    margin-left: 40px;
+    border-radius: 16px;
+    font-size: 16px;
+    color: #02014A;
+    margin-bottom: 0;
 }
 .subject{
     margin-top: 20px;
     background-color: #FFFFFF;
     border-radius: 16px;
     text-align: left;
-    width: 500px;
+    width: 450px;
     height: 310px;
 }
 .subject_text1{ 
@@ -106,7 +121,7 @@
 .check1{
     text-align: left;
     margin-top: 20px;
-    width: 450px;
+    width: 480px;
     height: 310px;
     background-color: #FFFFFF;
     border-radius: 16px;
@@ -122,7 +137,7 @@
     width: 200px;
 }
 .boxflex{
-    margin-top: 70px;
+    margin-top: 55px;
     margin-left: 40px;
     display: flex;
     justify-content: space-around;
@@ -133,9 +148,9 @@
     height: 100px;
 }
 .dip_text2{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     margin-top: 0;
-    font-size: 16px;
+    font-size: 14px;
     color: #02014A;
     text-transform: uppercase;
 }
@@ -144,6 +159,7 @@
     margin-left: 40px;
     font-size: 16px;
     color: #02014A;
+    
 }
 .dip_text4{
     margin-top: 20px;
@@ -151,3 +167,61 @@
     font-size: 18px;
     color: #02014A;
 }
+.del{
+    margin-top: 10px;
+    margin-left: 120px;
+    width: 24px;
+    height: 24px;
+}
+
+
+
+
+
+
+
+@media (min-width:320px) and (max-width:768px){
+    .body {
+        font-family: "Gilroy", sans-serif;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: auto;
+        height: auto;
+        background-color: #F9F6FD;
+        
+    }
+    .massg{
+        position: absolute;
+        width: 100%;
+        color: #FFFFFF;
+        background-color:#f27a17 ;
+        
+    }
+    
+}
+
+
+@media (min-width:100px) and (max-width:320px){
+    .body {
+        font-family: "Gilroy", sans-serif;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: auto;
+        height: auto;
+        background-color: #F9F6FD;
+        
+    }
+    .massg{
+        position: absolute;
+        width: 100%;
+        color: #FFFFFF;
+        background-color:#17f222 ;
+        
+    }
+    
+}
+
+
+

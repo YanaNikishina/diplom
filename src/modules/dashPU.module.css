@@ -13,6 +13,8 @@
 
 .massg{
     position: absolute;
+    display: flex;
+    justify-content: center;
     width: 100%;
     color: #FFFFFF;
     background-color:#6E17F2 ;
@@ -20,8 +22,9 @@
 }
 .text_massg{
     margin: 7px 0px;
-    width: 100%;
-    
+}
+.del{
+    margin-left: 30px;
 }
 .text_hi{
 
@@ -37,29 +40,14 @@
 .conteiner{
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 120px;
     margin-left: 350px;
     padding-right: 20px;
 }
-.box01{
-    display: flex;
-    justify-content: space-between;
-}
-.box_1, .box_3, .box_4{
+.box_3, .box_4{
     display: flex;
     align-items:flex-end;
-    justify-content: space-around;
-    
-}
-.subject, .contacts{
-    background-color: #FFFFFF;
-    border-radius: 16px;
-    text-align: left;
-    width: 310px;
-    height: 140px;
-}
-.contacts{
-    margin-left: 20px;
+    justify-content: space-around;   
 }
 .subject_text1, .contacts_text1, .dip_guid_text1, .class_guid_text1, .dep_man_text1, .term_text1, .percent_text1{ 
     margin-top: 17px;
@@ -68,99 +56,12 @@
     font-weight:500 ;
     color: #78788B;
 }
-
-.subject_text2, .contacts_text2,.contacts_text3{ 
-    margin-bottom: 0;
+.term_text{
+    margin-top: 30px;
     margin-left: 18px;
-    font-size: 18px;
-    font-weight:700 ;
-    color: #02014A;
-}
-.contacts{
-    display: flex;
-}
-.contacts_text1{
-    margin-bottom: 20px;
-}
-.contacts_text3{
-    margin-top: 0;
-    float: left
-}
-.sp_cont_t1,.sp_cont_t2{
-    font-size: 14px;
-    margin-left: 15px;
-    font-weight: 400;
-}
-.sp_cont_t1{
-    margin-left: 25px;
-}
-.contacts_photo{
-    width: 50px;
-    height: 50px;
-    margin-top: 25px;
-    margin-left: 50px;
-}
-.box_2{
-    display: flex;
-    text-align: left;
-    flex-direction: column;
-    background-color: #FFFFFF;
-    border-radius: 16px;
-    width: 310px;
-    height: 236px;
-}
-.news_text{
-    margin-top: 17px;
-    margin-bottom: 15px;
-    margin-left: 18px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight:500 ;
-    text-transform: uppercase;
-    color: #78788B;
-}
-
-.box_news{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 150px;
-
-}
-.news1, .news2, .news3{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color:#F6F7FA ;
-    width: 280px;
-    height: 40px;
-    margin-left: 18px;
-    border-radius: 8px;
-}
-.news1_photo1, .news2_photo1, .news3_photo1{
-    margin-left: 10px;
-    width: 27px;
-    height: 27px;
-}
-.news1_photo2, .news2_photo2, .news3_photo2{
-    margin-left: 20px;
-    margin-right: 10px;
-    width: 25px;
-    height: 25px;
-}
-.news1_text1, .news2_text1, .news3_text1{
-    font-size: 14px;
-    font-weight: 600;
     color: #02014A;
-    opacity: 0.7;
-}
-.news_text_end{
-    text-align: center;
-    margin-top: 10px;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: underline;
-    color: #02014A;
-    opacity: 0.5;
 }
 .box_dip_guid, .box_class_guid, .box_dep_man,.box_term{
     display: flex;
@@ -196,7 +97,7 @@
     font-weight: 500;
     color: #6E17F2;
 }
-.term, .percent{
+.term, .percent, .form{
     display: flex;
     margin-top: 20px;
     border-radius: 16px;
@@ -205,6 +106,13 @@
     height: 300px;
 }
 .term{background-color: #FFFFFF;    flex-direction: column;}
+.form{
+    flex-direction: column;
+    background-image: url('../img/Group932.svg');
+    width: 500px;
+    height: 300px;
+
+}
 .percent{background-image: url('../img/Background.svg');}
 .box_term{   justify-content: space-around;}
 .box_term1,.box_term2{
@@ -226,14 +134,11 @@
 
 .term_text4, .term_text5{
     margin-top: 50px;
-    margin-left: 30px;
+    margin-left: 40px;
     margin-bottom: 0px;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bold;
     color: #02014A;
-}
-.term_text5{
-    margin-left: 20px;
 }
 
 .sp_term_text4, .sp_term_text5{
@@ -256,21 +161,60 @@
     color: #02014A;
 }
 .circularProgressbar{
-    margin-left: -20px;
+    margin-left: -70px;
     margin-top: 60px;
     height: 210px;
     width: 210px;
     font-family: "Gilroy", sans-serif;
 }
+.input_text {
+    margin-left:20px;
+    margin-top: 7px;
+    width: 380px;
+    height: 40px;
+    opacity: 0.5;
+    border-radius: 8px;
+    border: 1px solid rgb(118, 118, 118);
+}
+.btn{
+    display: flex;
+    cursor: pointer;
+    font-family:  "Gilroy", sans-serif ;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    margin-left: 20px;
+    width: 140px;
+    height: 40px;
+    color: #FFFFFF;
+    background-color:#6E17F2 ;
+    outline: none;
+    
+}
+
+.btn:hover{
+    transform: scale(1.1);
+ }
 
 
-
+.txakk{
+    font-size: 14px;
+    font-weight:200px;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+.active {
+    display: flex;
+}
+.no_active {
+    display: none;
+}
 
 @media (max-width:768px){
     .conteiner{
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
+        margin-top: 100px;
         margin-left: 240px;
     }
     .text_hi{
@@ -407,7 +351,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 80px;
         margin-left: 40px;
     }
     .menu{
@@ -415,9 +359,9 @@
     }
     .text_hi{
         margin-top: 60px;
-        margin-left: 100px;
+        margin-left: 80px;
         color: #02014A;
-        font-size: 22px;
+        font-size: 20px;
         font-weight:bold;
         /* width: 150px; */
     }
@@ -501,7 +445,7 @@
         width: 100%;
         height: 170px;
     }
-    .term{
+    .term, .form{
         display: flex;
         flex-direction: column;
         margin-top: 20px;
@@ -535,5 +479,36 @@
         height: 150px;
         width: 150px;
         font-family: "Gilroy", sans-serif;
+    }
+    .input_text {
+        margin-left:20px;
+        margin-top: 7px;
+        width: 200px;
+        height: 40px;
+        opacity: 0.5;
+        border-radius: 8px;
+        border: 1px solid rgb(118, 118, 118);
+    }
+    .btn{
+        display: flex;
+        cursor: pointer;
+        font-family:  "Gilroy", sans-serif ;
+        margin-top: 15px;
+        border: none;
+        border-radius: 8px;
+        margin-left: 20px;
+        width: 80px;
+        height: 30px;
+        color: #FFFFFF;
+        background-color:#6E17F2 ;
+        outline: none;
+        margin-bottom: 20px;
+        
+    }
+    .txakk{
+        font-size: 12px;
+        font-weight:200px;
+        margin-top: 7px;
+        margin-left: 13px;
     }
 }

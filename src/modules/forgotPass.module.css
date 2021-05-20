@@ -170,3 +170,228 @@
     margin-left: 8px;
 
 }
+
+@media (max-width:768px){
+
+    .big_conteiner{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+    .body {
+        font-family: "Gilroy", sans-serif;
+        margin: 0;
+        width: auto;
+    }
+    
+    .header{
+        position: absolute;
+        padding-left: 40px;
+        padding-top: 620px;
+        width: auto;
+    }
+    .conteiner_2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 25%;
+        order: 2;
+    }
+    
+    .conteiner_1{
+        background-image:url('../img/Group_913.svg');
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        order: 1;
+
+    }
+
+    .text{
+        margin-top: 230px;
+        margin-left: 20%;
+        color: #02014A;
+        background-color: #FFFFFF;
+        height: 162px;
+        width: 460px;
+        border-radius: 16px;
+    }
+    .btn{
+        display: flex;
+        cursor: pointer;
+        font-family:  "Gilroy", sans-serif ;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 8px;
+        width: 140px;
+        height: 40px;
+        color: #FFFFFF;
+        background-color:#6E17F2 ;
+        outline: none;
+        
+    }
+
+}
+@media (max-width:320px){
+    .conteiner_1{
+        background-image:url('../img/Group_913.svg');
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        order: 1;
+    }
+    .conteiner_2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 25%;
+        order: 2;
+    }
+    
+    .text{
+        margin-top: 70px;
+        margin-left: 15%;
+        color: #02014A;
+        background-color: #FFFFFF;
+        height: 60px;
+        width: 230px;
+        border-radius: 16px;
+    }
+    .bigtext{
+        margin: 0;
+        padding-top: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .smoltext{
+        font-size: 15px;
+        font-weight: 300;
+        margin-top: 5px;
+        margin-left: 50px;
+        margin-bottom: 8px;
+    }
+    .text_quest{
+        margin-top:3px;
+        
+    }
+    
+    .text_A{
+        color: #FFFFFF;
+        margin-bottom: 0;
+        margin-left: 0;
+        font-size: 13px;
+        font-weight: lighter;
+    }
+    .text_B{
+        color: #FFFFFF;
+        margin-top:0px;
+        margin-left: 0;
+        font-size: 13px;
+        font-weight: lighter;
+    }
+    .btn_2{
+        cursor: pointer;
+        margin-left: 0;
+        border: none;
+        border-radius: 5px;
+        width: 70px;
+        height: 20px;
+        color: #FFFFFF;
+        background-color:#FEC000 ;
+        outline: none; 
+    }
+    .txakk2{
+        font-size: 8px;
+        font-weight: 100px;
+    }
+
+    .header{
+        position: absolute;
+        padding-left: 20px;
+        padding-top: 220px;
+        
+    }
+    header img {
+        width: 50px;
+    }
+
+    .h1{
+        text-align: left; 
+        color: #02014A;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      
+    }
+    .text_vvod{
+        margin-left: 0;
+        width: 170px;
+        text-align: left;
+        color: #02014A;
+        opacity: 0.95;
+        font-size: 13px;
+        font-weight: 500;
+        margin-top: 8px;
+        margin-bottom: 10px;
+    
+    }
+ 
+    .text_vvod2{
+        color: #02014A;
+        opacity: 0.95;
+        font-size: 13px;
+        width: 170px;
+        font-weight: 500;
+        text-align: left;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        
+    
+    }
+    
+    .avtoriz{
+        color: #02014A;
+        opacity: 0.95;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+    
+     .input_mail {
+        margin-left: 0px;
+        margin-top: 7px;
+        width: 170px;
+        height: 25px;
+        opacity: 0.5;
+        border-radius: 5px;
+        border: 1px solid rgb(118, 118, 118);
+    }
+
+    .btn{
+        display: flex;
+        cursor: pointer;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        border: none;
+        border-radius: 8px;
+        width: 160px;
+        height: 30px;
+        color: #FFFFFF;
+        background-color:#6E17F2 ;
+        outline: none;
+        
+    }
+    .txakk{
+        font-size: 13px;
+        margin-top: 5px;
+        margin-left: 25px;
+    
+    }
+    
+}

@@ -55,11 +55,17 @@ export const Avtoris =() =>{
                 <form  className={styles.conteiner_2} >
                     <h1 className={styles.h1} >Авторизация</h1>
                     <p  className={styles.text_vvod}> Введите ваши данные для входа в аккаунт.</p>
-                    <input  name="mail" onChange={changeInputHandler} value={form.mail} className={`${styles.input} ${styles.input_mail}`} placeholder=" E-mail"/>
-                    <input  name="pass" onChange={changeInputHandler} value={form.pass} className={`${styles.input} ${styles.input_pass}`} placeholder=" Пароль"/>
+                    <input  name="mail" 
+                    onChange={changeInputHandler} value={form.mail} 
+                    className={`${styles.input} ${styles.input_mail}`} placeholder=" E-mail"/>
+                    <input  name="pass" 
+                    onChange={changeInputHandler} value={form.pass}
+                     className={`${styles.input} ${styles.input_pass}`} placeholder=" Пароль"/>
                     <Link to ={'/pages/ForgotPass'} className={styles.forgot_pass}>Забыли пароль?</Link>
                     <Link className={styles.link} to ={'/pages/Dashboard'}>
-                    <button type='submit' onClick={send} className={styles.btn}>
+                    <button type='submit' 
+                    onClick={send} 
+                    className={styles.btn}>
                         <span className={styles.txakk}>Войти</span>  
                     </button> 
                     </Link>

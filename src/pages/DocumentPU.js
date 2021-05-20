@@ -1,18 +1,19 @@
 import React from 'react'
 import styles from '../modules/document.module.css'
 import {Footer} from '../components/Footer'
-import {Menu} from '../components/Menu'
+import {MenuPU} from '../components/MenuPU'
 import photo from '../img/photo.svg'
 import paper from '../img/Paper.svg'
+import del from '../img/Delete.svg'
 
 
-export const Documents=()=>{
+export const DocumentsPU=()=>{
     return(
         <div className={styles.body}>
             <div className={styles.massg}>
                 <p className ={styles.text_massg}>Важное сообщение!!</p>
             </div>
-            <Menu className={styles.menu}></Menu>
+            <MenuPU className={styles.menu}></MenuPU>
             <div className={styles.big_conteiner}>
                 <p className={styles.text_hi}>Документы</p>
                 
@@ -25,34 +26,43 @@ export const Documents=()=>{
                             <div className={styles.icon}>
                                 <img className={styles.icon_photo} src ={paper} alt="Photos"/>
                                 <p className={styles.dip_text}>Титульный лист.pdf</p>
+                                <img className={styles.del} src ={del} alt="Photos"/>
+                                
                             </div>
                             <div className={styles.icon}>
                                 <img className={styles.icon_photo} src ={paper} alt="Photos"/>
                                 <p className={styles.dip_text}>Титульный лист.pdf</p>
+                                <img className={styles.del} src ={del} alt="Photos"/>
                             </div>
                             <div className={styles.icon}>
                                 <img className={styles.icon_photo} src ={paper} alt="Photos"/>
                                 <p className={styles.dip_text}>Титульный лист.pdf</p>
+                                <img className={styles.del} src ={del} alt="Photos"/>
                             </div>
                             <div className={styles.icon}>
                                 <img className={styles.icon_photo} src ={paper} alt="Photos"/>
                                 <p className={styles.dip_text}>Титульный лист.pdf</p>
+                                <img className={styles.del} src ={del} alt="Photos"/>
                             </div>
                             <div className={styles.icon}>
                                 <img className={styles.icon_photo} src ={paper} alt="Photos"/>
                                 <p className={styles.dip_text}>Титульный лист.pdf</p>
+                                <img className={styles.del} src ={del} alt="Photos"/>
                             </div>
                             <div className={styles.icon}>
                                 <img className={styles.icon_photo} src ={paper} alt="Photos"/>
                                 <p className={styles.dip_text}>Титульный лист.pdf</p>
+                                <img className={styles.del} src ={del} alt="Photos"/>
                             </div>
                             <div className={styles.icon}>
                                 <img className={styles.icon_photo} src ={paper} alt="Photos"/>
                                 <p className={styles.dip_text}>Титульный лист.pdf</p>
+                                <img className={styles.del} src ={del} alt="Photos"/>
                             </div>
                             <div className={styles.icon}>
                                 <img className={styles.icon_photo} src ={paper} alt="Photos"/>
                                 <p className={styles.dip_text}>Титульный лист.pdf</p>
+                                <img className={styles.del} src ={del} alt="Photos"/>
                             </div>
                         </div>
                     </div>

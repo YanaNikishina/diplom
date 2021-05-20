@@ -1,18 +1,18 @@
 import React from 'react'
 import styles from '../modules/document.module.css'
 import {Footer} from '../components/Footer'
-import {Menu} from '../components/Menu'
+import {MenuDR} from '../components/MenuDR'
 import photo from '../img/photo.svg'
 import paper from '../img/Paper.svg'
 
 
-export const Documents=()=>{
+export const DocumentsDR=()=>{
     return(
         <div className={styles.body}>
             <div className={styles.massg}>
                 <p className ={styles.text_massg}>Важное сообщение!!</p>
             </div>
-            <Menu className={styles.menu}></Menu>
+            <MenuDR className={styles.menu}></MenuDR>
             <div className={styles.big_conteiner}>
                 <p className={styles.text_hi}>Документы</p>
                 

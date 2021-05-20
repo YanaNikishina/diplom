@@ -20,7 +20,7 @@ export const FAQDR=()=>{
                 <p className={styles.text}>Здесь собраны самые частозадаваемые вопросы. Весь список вопросов можно найти в нашей группе ВКонтакте - <span className={styles.spantext}>“ПОКС Диплом”</span>.</p>
                 
                 <div className={styles.conteiner}>
-                    <div>
+                    <div className={styles.quest}>
                     <div className={styles.dip_box2}>
                         <p className={styles.text1}>Какой то вопрос</p>
                         <p className= {answer1 ? `${styles.dip_text1} ${styles.active}`:`${styles.dip_text1} ${styles.no_active}`}>Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком.</p>
@@ -48,13 +48,15 @@ export const FAQDR=()=>{
                     </div>
                     </div>
                     <div className={styles.categor}>
-                        <p className={styles.dip_text}>Критерии</p>
-                        <p className={styles.dip_text1}>Тестирование</p>
-                        <p className={styles.dip_text1}>ПЗ</p>
-                        <p className={styles.dip_text1}>Документы</p>
-                        <p className={styles.dip_text1}>Разработка</p>
-                        <p className={styles.dip_text1}>Защита</p>
-                        <p className={styles.dip_text1}>Другое</p>
+                    <p className={styles.dip_text}>Критерии</p>
+                        <div className={styles.catqw}>
+                            <p className={styles.dip_text1}>Тестирование</p>
+                            <p className={styles.dip_text3}>ПЗ</p>
+                            <p className={styles.dip_text3}>Документы</p>
+                            <p className={styles.dip_text3}>Разработка</p>
+                            <p className={styles.dip_text3}>Защита</p>
+                            <p className={styles.dip_text3}>Другое</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -28,22 +28,24 @@ export const Dashboard =() =>{
 
                 <div className={styles.conteiner}>
                     <div className={styles.box_1}>
-
+                        <div className={styles.box01}>
                         <div className={styles.subject}>
                             <p className={styles.subject_text1}>Твоя тема диплома</p>
                             <p className={styles.subject_text2}>Разработка клиентской части портала дипомников ГБПОУ <br/>РО "РКСИ"</p>
                         </div>
 
                         <div className={styles.contacts}>
-                        <div>
-                            <p className={styles.contacts_text1}>Контакты</p>
-                            
-                            <p className={styles.contacts_text2}>Тел.: <span className={styles.sp_cont_t1}> 8 928 768 32 37</span></p>
-                            <p className={styles.contacts_text3}>Email: <span className={styles.sp_cont_t2}> ktoto@gmail.com</span></p>
+                            <div>
+                                <p className={styles.contacts_text1}>Контакты</p>
+                                
+                                <p className={styles.contacts_text2}>Тел.: <span className={styles.sp_cont_t1}> 8 928 768 32 37</span></p>
+                                <p className={styles.contacts_text3}>Email: <span className={styles.sp_cont_t2}> ktoto@gmail.com</span></p>
                             
                             </div>
                             <img className={styles.contacts_photo} src ={photo} alt="Photos"/>
                         </div>
+                        </div>
+                        
 
                         <div className={styles.box_2}>
 

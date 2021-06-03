@@ -52,7 +52,7 @@
     width: 330px;
     height: 35px;
     font-size: 20px;
-    padding-top: 10px;
+    padding-top: 8px;
     text-transform: uppercase;
     background-color: #FFFFFF;
     border-radius: 16px;
@@ -62,14 +62,10 @@
     display: flex;
     margin-left: 20px;
 }
-
-
 .box1{
     display: flex;
     width: 680px;
     flex-direction: column;
-   
-    
 }
 .big_blok, .form{
     background-color: #FFFFFF;
@@ -90,7 +86,7 @@
     color: #02014A;
     
 }
-.text2{
+.text2,.text02,.text022{
     font-size: 16px;
     text-transform: uppercase;
     color: #78788B;
@@ -126,10 +122,13 @@
     display: flex;
     flex-direction: column;
 }
-.text5_b{
+.text5_b, .text7_b{
     text-align: left;
     display: flex;
     justify-content: space-around;
+}
+.text7_b{
+    padding-right: 20px;
 }
 .del{
     width: 15px;
@@ -243,7 +242,7 @@
 .sortyear{
     display: flex;
 }
-.sortruc{
+.sortruc,.sortruc2{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
@@ -307,4 +306,228 @@
 }
 .link{
     text-decoration: none;
+}
+@media (max-width:768px){
+    .text_hi{
+        position: absolute;
+        margin-top: 80px;
+        margin-left: 250px;
+        color: #02014A;
+        font-size: 28px;
+        font-weight:bold;
+        /* width: 150px; */
+    }
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+        margin-left: 230px;
+        padding-right: 20px;
+        min-height: 800px;
+        
+    }
+    .box01{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .box1{
+        display: flex;
+        margin-top: 20px;
+        width: 100%;
+        flex-direction: column;
+        order: 2;
+    }
+    .box2{
+        display: flex;
+        flex-direction: column;
+        order: 1;
+    }
+    .sort{
+        margin-top: 20px;
+        margin-left: 0;
+        height: 150px;
+    }
+    .filtr{
+        margin-left: 0;
+        width: 100%;  
+    }
+    .sortil{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        padding-bottom: 20px;
+        margin-left: 0px;
+    }
+    .sortyear{
+        display: flex;
+        flex-wrap: wrap;
+        width: 150px;
+    }
+    .sortruc{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .sortruc2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 250px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .textyear{
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 18px;
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight:300 ;
+        color: #78788B;   
+    }
+    .box_sort {
+        display: flex;
+        justify-content: left;
+        margin-left: 20px;
+    }
+    .text_sort{
+        margin-left: 20px;
+        text-align: left;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 800px;
+    }
+    .input_text {
+        margin-left:20px;
+        margin-top: 7px;
+        width: 400px;
+        height: 35px;
+        opacity: 0.5;
+        border-radius: 8px;
+        border: 1px solid rgb(118, 118, 118);
+    }
+    
+    .boxe01{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .btn2{
+        margin-left: 0px;
+    }
+    .active {
+        display: flex;
+    }
+    .no_active {
+        display: none;
+    }
+    
+}
+@media (max-width:320px){
+    .box01,.boxe01{
+        display: flex;
+        margin-left: 0px;
+    }
+    .text_hi{
+        position: absolute;
+        margin-top: 80px;
+        margin-left: 40px;
+        color: #02014A;
+        font-size: 28px;
+        font-weight:bold;
+        /* width: 150px; */
+    }
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+        margin-left: 20px;
+        padding-right: 20px;
+        min-height: 800px;
+        
+    }
+    .sort{
+        margin-top: 20px;
+        margin-left: 0;
+        height: 150px;
+        width: 100%;
+    }
+    .filtr{
+        margin-left: 0;
+        width: 100%;  
+    }
+    .cheing{
+        display: flex;
+        flex-direction: row;
+        margin-left: -15px;
+    }
+    .sortyear{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .big_blok, .form{
+        background-color: #FFFFFF;
+        width: 100%;
+        margin-left: 0px;
+        border-radius: 16px;
+        padding-bottom: 20px;
+    }
+    .text2,.text022{
+        font-size: 10px;
+        text-transform: uppercase;
+        color: #78788B;
+    }
+    .text02{
+        display: none;
+    }
+    .text022{
+        padding-left: 30px;
+    }
+    .box_in{
+        display: flex;
+        margin-left: -10px;
+        justify-content: space-around;
+    }
+    .text3_b, .text6_b{
+        text-align: left;
+        display: flex;
+        font-size: 4px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .text6_b{
+        margin-left: -10px;
+    }
+    .text3{
+        margin-left: 0px;
+        font-size: 12px;
+    }
+    .text4_b{
+        display: none;
+    }
+    .text5_b{
+        text-align: left;
+        display: flex;
+        font-size: 4px;
+        justify-content: space-around;
+    }
+    .input_text {
+        margin-left:20px;
+        margin-top: 7px;
+        width: 240px;
+        height: 35px;
+        opacity: 0.5;
+        border-radius: 8px;
+        border: 1px solid rgb(118, 118, 118);
+    }
+    .active {
+        display: flex;
+    }
+    .no_active {
+        display: none;
+    }
 }

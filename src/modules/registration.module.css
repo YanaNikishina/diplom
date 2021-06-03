@@ -18,6 +18,7 @@
 .conteiner_1{
     background-image:url('../img/Group_913.svg');
     display: flex;
+    text-align: center;
     flex-direction: column;
     height: 100vh;
     width: 60%;
@@ -170,7 +171,7 @@ h1{
 
 .chec_1, .chec_2{ 
     flex-direction: column;
-  
+    text-align: left;
 }
 
 
@@ -195,7 +196,7 @@ h1{
 
 }
 
-.input_company, .input_position,.input_number, .input_mail, .input_pass,.input_numb, .input_maill, .input_pas {
+.input_company, .input_position,.input_number, .input_mail, .input_pass,.input_numb, .input_maill, .input_pas, .group {
     margin-left: 0px;
     margin-top: 7px;
     width: 374px;
@@ -204,14 +205,14 @@ h1{
     border-radius: 8px;
     border: 1px solid rgb(118, 118, 118);
 }
-.group{
+/* .group{
     margin-top: 7px;
-    width: 380px;
-    height: 46px;
+    width: 374px;
+    height: 35px;
     opacity: 0.5;
     border-radius: 8px;
     border: 1px solid rgb(118, 118, 118);
-}
+} */
 .check_box{
     display: flex;
     margin-top: 15px;
@@ -372,7 +373,7 @@ font-weight: 100px;
     }
     
     .text{
-        margin-top: 50px;
+        margin-top: 40px;
         margin-left: 15%;
         color: #02014A;
         background-color: #FFFFFF;
@@ -415,14 +416,14 @@ font-weight: 100px;
         cursor: pointer;
         border: none;
         border-radius: 5px;
-        width: 70px;
-        height: 20px;
+        width: 100px;
+        height: 30px;
         color: #FFFFFF;
         background-color:#FEC000 ;
         outline: none; 
     }
     .txakk2{
-        font-size: 8px;
+        font-size: 12px;
         font-weight: 100px;
     }
 
@@ -436,7 +437,7 @@ font-weight: 100px;
         width: 50px;
     }
 
-    h1{
+    .h1{
         text-align: left; 
         color: #02014A;
         font-size: 25px;
@@ -497,7 +498,7 @@ font-weight: 100px;
     .input_fio {
         margin-top: 20px;
         width: 170px;
-        height: 25px;
+        height: 30px;
         opacity: 0.5;
         border-radius: 5px;
         border: 1px solid rgb(118, 118, 118);
@@ -507,15 +508,15 @@ font-weight: 100px;
         margin-left: 0px;
         margin-top: 7px;
         width: 170px;
-        height: 25px;
+        height: 30px;
         opacity: 0.5;
         border-radius: 5px;
         border: 1px solid rgb(118, 118, 118);
     }
     .group{
         margin-top: 7px;
-        width: 176px;
-        height: 32px;
+        width: 170px;
+        height: 30px;
         opacity: 0.5;
         border-radius: 5px;
         border: 1px solid rgb(118, 118, 118);

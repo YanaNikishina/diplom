@@ -137,7 +137,6 @@
 }
 .percent{
     display: flex;
-    
     margin-top: 20px;
     border-radius: 16px;
     text-align: left;
@@ -227,4 +226,143 @@
 }
 .box02{
     width: 200px;
+}
+@media (max-width:768px){
+    .text_hi{
+        position: absolute;
+        margin-top: 80px;
+        margin-left: 240px;
+        color: #02014A;
+        font-size: 28px;
+        font-weight:bold;
+        /* width: 150px; */
+    }
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+        margin-left: 240px;
+        padding-right: 20px;
+        min-height: 800px;
+        
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .percent{
+        display: flex;
+        margin-top: 20px;
+        border-radius: 16px;
+        text-align: left;
+        width: 100%;
+        height: 300px;
+        background-image: url('../img/Gr.svg');
+    }
+    .circularProgressbar{
+        margin-left: 0;
+        margin-top: 50px;
+        height: 150px;
+        width: 200px;
+        font-family: "Gilroy", sans-serif;
+    }
+    .dip_text2{
+        font-size: 16px;
+        font-weight:400 ;
+        color: #ACA2BB;
+        opacity: 50%;
+        margin-bottom: 0;
+        margin-left: 20px;
+        width: 90px;
+        height: 30px;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: #ACA2BB;
+    }
+    .stud{
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+}
+@media (max-width:320px){
+    .text_hi{
+        position: absolute;
+        margin-top: 80px;
+        margin-left: 40px;
+        color: #02014A;
+        font-size: 28px;
+        font-weight:bold;
+        /* width: 150px; */
+    }
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+        margin-left: 20px;
+        padding-right: 20px;
+        min-height: 800px;
+        
+    }
+    .subject, .contacts{
+        display: flex; 
+        background-color: #FFFFFF;
+        border-radius: 16px;
+        text-align: left;
+        margin-top: 20px;
+        width: 100%;
+        height: 140px;
+    }
+    .contacts_photo{
+        width: 50px;
+        height: 50px;
+        margin-top: 25px;
+        margin-left: 30px;
+    }
+    .percent{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        border-radius: 16px;
+        text-align: left;
+        width: 100%;
+        height: 300px;
+        background-image:none;
+        background-color: #FFFFFF;
+    }
+    .percent_text2{
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 400;
+        width: 250px;
+        margin-left: 30px;
+        color: #02014A;
+    }
+    .circularProgressbar{
+        margin-left: 60px;
+        margin-top: 20px;
+        height: 150px;
+        width: 150px;
+        font-family: "Gilroy", sans-serif;
+    }
+    .stud_box{
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+        font-size: 16px;
+        font-weight:400 ;
+        color: #02014A; 
+    }
+    .studs{
+        list-style-type: none;
+        padding-left: 20px;
+        text-align: left;
+        
+    }
+    .box02{
+        width: 120px;
+    }
+    
 }

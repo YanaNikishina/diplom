@@ -47,7 +47,7 @@
 }
 .conteiner{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin-top: 140px;
     margin-left: 360px;
     margin-right: 20px;
@@ -108,6 +108,7 @@
     
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     height: auto;
     border-radius: 16px;
     padding-bottom: 10px;
@@ -137,7 +138,6 @@
 .textcontent{
     display: flex;
     justify-content: center;
-
     padding-top: 180px;
     height: 250px;
 }
@@ -224,4 +224,73 @@
     margin-top: 30px;
     font-size: 16px;
     color: #02014A;   
+}
+@media (max-width:768px){
+    .text_hi{
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 370px;
+        color: #02014A;
+        font-size: 28px;
+        font-weight:bold;
+    }
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        margin-top: 140px;
+        margin-left: 240px;
+        margin-right: 20px;
+        min-height: 800px;
+    }
+}
+@media (max-width:320px){
+    .text_hi{
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 100px;
+        color: #02014A;
+        font-size: 28px;
+        font-weight:bold;
+    }
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+        margin-left: 40px;
+        margin-right: 20px;
+        min-height: 800px;
+    }
+    .dip_box1{
+        margin-left: -10px;
+        background-color: #FFFFFF;
+        width: 100%;
+        border-radius: 16px;
+    }
+    .contacts_photo1{
+        margin-top: 50px;
+        margin-left: 15px;
+        width: 230px;
+        height: 270px;
+    }
+    .box5{
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        height: auto;
+        margin-left: -10px;
+        margin-top: 20px;
+        padding-bottom: 30px;
+        width: 100%;
+        border-radius: 16px;
+    }
+    .input_text {
+    
+        margin-left:20px;
+        margin-top: 7px;
+        width: 220px;
+        height: 35px;
+        opacity: 0.5;
+        border-radius: 8px;
+        border: 1px solid rgb(118, 118, 118);
+    }
 }

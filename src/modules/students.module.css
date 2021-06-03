@@ -105,3 +105,75 @@
     color: #02014A;
     text-decoration: none;
 }
+@media (max-width:768px){
+    .text_hi{
+        position: absolute;
+        margin-top: 80px;
+        margin-left: 240px;
+        color: #02014A;
+        font-size: 28px;
+        font-weight:bold;
+    }
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        margin-top: 140px;
+        margin-left: 240px;
+        margin-right: 20px;
+        min-height: 600px;
+    }
+    .dip_text{
+        margin-top: 40px;
+        text-align: left;
+        padding-left: 30px;
+        border-radius: 16px;
+        font-size: 20px;
+        font-weight:600 ;
+        color: #02014A;
+        margin-bottom: 0;
+    }
+    .dip_text2{
+        font-size: 14px;
+        font-weight:400 ;
+        color: #ACA2BB;
+        opacity: 50%;
+        margin-bottom: 0;
+        margin-left: 20px;
+        width: 70px;
+        height: 30px;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: #ACA2BB;
+    }
+    .studs{
+        list-style-type: none;
+        padding-left: 20px;
+        font-size: 12px;
+    }
+}
+@media (max-width:320px){
+    .text_hi{
+        position: absolute;
+        margin-top: 80px;
+        margin-left: 70px;
+        color: #02014A;
+        font-size: 28px;
+        font-weight:bold;
+    }
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        margin-top: 140px;
+        margin-left: 20px;
+        margin-right: 20px;
+        min-height: 600px;
+    }
+    .stud_box{
+        display: flex; 
+        justify-content: space-around; 
+        flex-wrap: wrap;
+        font-size: 16px;
+        font-weight:400 ;
+        color: #02014A; 
+    }
+}

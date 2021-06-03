@@ -31,7 +31,7 @@ export const MenuPU =()=>{
                 <div className={styles.header_menu}>
                     <img className={styles.percent_img}src ={Avatar1} alt="Photos"/>
                     <div>
-                        <p className={styles.header_text1}>Алла Ильинична</p>
+                        <p className={styles.header_text1}>Катерина Петровна</p>
                         <p className={styles.header_text2}>Зав. отделения</p>
                     </div>
                     <div className={styles.project_icons}>

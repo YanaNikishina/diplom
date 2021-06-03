@@ -28,7 +28,7 @@ export const MenuDR =()=>{
                 <div className={styles.header_menu}>
                     <img className={styles.percent_img}src ={Avatar1} alt="Photos"/>
                     <div>
-                        <p className={styles.header_text1}>Вербицкая Маргарита</p>
+                        <p className={styles.header_text1}>Мария Сидорова</p>
                         <p className={styles.header_text2}>Дип. руководитель</p>
                     </div>
                     <div className={styles.project_icons}>

@@ -8,7 +8,6 @@ import PhotoBox2 from '../img/PhotoBox2.svg'
 import PhotoBox3 from '../img/PhotoBox3.svg'
 import PhotoBox4 from '../img/PhotoBox4.svg'
 import PhotoBox5 from '../img/PhotoBox5.svg'
-import Photo_box from '../img/Photo_check_boxes.svg'
 import Photo_radio_dip from '../img/Photo_radio_dip.svg'
 import Photo_dipruc from '../img/Photo_dipruc.svg'
 
@@ -38,27 +37,27 @@ export const MyDiplom=()=>{
                                 <p className={styles.box1_text}>Web-сайт</p>
                             </div>
                             <div className={styles.box_2}>
-                                <img className={styles.box2_img}src ={PhotoBox2} alt="Photos"/>
+                                <img className={styles.box1_img}src ={PhotoBox2} alt="Photos"/>
                                 <p className={styles.box2_text}>Приложение</p>
                             </div>
                             <div className={styles.box_3}>
-                                <img className={styles.box3_img}src ={PhotoBox3} alt="Photos"/>
+                                <img className={styles.box1_img}src ={PhotoBox3} alt="Photos"/>
                                 <p className={styles.box3_text}>Игра</p>
                             </div>
                         </div>
                         <div className={styles.boxes2}>
                             <div className={styles.box_4}>
-                                <img className={styles.box4_img}src ={PhotoBox4} alt="Photos"/>
+                                <img className={styles.box1_img}src ={PhotoBox4} alt="Photos"/>
                                 <p className={styles.box4_text}>Сервис</p>
                             </div>
                             <div className={styles.box_5}>
-                                <img className={styles.box5_img}src ={PhotoBox5} alt="Photos"/>
+                                <img className={styles.box1_img}src ={PhotoBox5} alt="Photos"/>
                                 <p className={styles.box5_text}>Landing Page</p>
                             </div>
                         </div>
                         <div className={styles.boxes3}>
                             <div className={styles.prbar}>
-                            <ProgressBar  completed={25} 
+                            <ProgressBar  completed={30} 
                             height={'15'}
                             bgColor={'#6E17F2'}
                             labelSize={"0px"} 
@@ -75,64 +74,8 @@ export const MyDiplom=()=>{
                                 className ={styles.btn_next}><span className ={styles.text_next}>Далее</span></button>
                         </div>
                     </div>
-                    <div className={ cat===2 ? `${styles.boxes02} ${styles.active}` : `${styles.boxes02} ${styles.no_active}`} >
-                        <p className={styles.text_conteiner1}>Выбери желаемую оценку:</p>
-                            <div className={styles.boxes_mark}>
-                                <div className={styles.radio}>
-                                    <label className={styles.radio_label}>
-                                        <input className={styles.radio_btn} type="radio" value="false" name='mark1' defaultChecked/>
-                                        <span className={styles.faik}></span>
-                                        <span className={styles.radio_text}>Оценка 5 (Отлично)</span> 
-                                    </label>
-                                
-                                    <label className={styles.radio_label}>
-                                        <input className={styles.radio_btn} type="radio" value="false" name='mark1' />
-                                        <span className={styles.faik}></span>
-                                        <span className={styles.radio_text}>Оценка 4(Хорошо)</span> 
-                                    </label>
-                                        
-                                    <label className={styles.radio_label}>
-                                        <input className={styles.radio_btn} type="radio" value="false" name='mark1' />
-                                        <span className={styles.faik}></span>
-                                        <span className={styles.radio_text}>Оценка 3(Удовлетворительно)</span> 
-                                    </label>
-                                </div>
-                                
-                                <img className={styles.boxmark_img}src ={Photo_box} alt="Photos"/>
-
-                            </div>
-
-                            <div className={styles.boxes3}>
-                                <button
-                                onClick={() => setCat(1)}
-                                type="button" 
-                                name="cat" 
-                                id="button" 
-                                value="2"
-                                className ={styles.btn_next}><span className ={styles.text_next}>Назад</span></button>
-                                
-                                <div className={styles.prbar}>
-                                <ProgressBar  completed={50} 
-                                height={'15'}
-                                bgColor={'#6E17F2'}
-                                labelSize={"0px"} 
-                                baseBgColor={"#E9EBED"}
-                                width={'100%'}
-                                />
-                                </div>
-                                
-                                <button
-                                    onClick={() => setCat(3)}
-                                    type="button" 
-                                    name="cat" 
-                                    id="button" 
-                                    value="2"
-                                    className ={styles.btn_next}><span className ={styles.text_next}>Далее</span></button>
-                            </div>
-                            
-                        </div>
                         
-                    <div className={ cat===3 ? `${styles.boxes03} ${styles.active}` : `${styles.boxes03} ${styles.no_active}`} >
+                    <div className={ cat===2 ? `${styles.boxes03} ${styles.active}` : `${styles.boxes03} ${styles.no_active}`} >
                         <p className={styles.text_conteiner1}>Выбери свою тему диплома:</p>
                             <div className={styles.diptem}>
                             <div className={styles.radio_dip}>
@@ -198,7 +141,7 @@ export const MyDiplom=()=>{
                             </div>
                             <div className={styles.boxes3}>
                             <button
-                                onClick={() => setCat(2)}
+                                onClick={() => setCat(1)}
                                 type="button" 
                                 name="cat" 
                                 id="button" 
@@ -206,7 +149,7 @@ export const MyDiplom=()=>{
                                 className ={styles.btn_next}><span className ={styles.text_next}>Назад</span></button>
 
                                 <div className={styles.prbar}>
-                                <ProgressBar  completed={75} 
+                                <ProgressBar  completed={60} 
                                 height={'15'}
                                 bgColor={'#6E17F2'}
                                 labelSize={"0px"} 
@@ -215,7 +158,7 @@ export const MyDiplom=()=>{
                                 />
                                 </div>
                                 <button
-                                    onClick={() => setCat(4)}
+                                    onClick={() => setCat(3)}
                                     type="button" 
                                     name="cat" 
                                     id="button" 
@@ -224,15 +167,15 @@ export const MyDiplom=()=>{
                             </div>
                             
                         </div>
-                    <div className={ cat===4 ? `${styles.boxes04} ${styles.active}` : `${styles.boxes04} ${styles.no_active}`} >
+                    <div className={ cat===3 ? `${styles.boxes04} ${styles.active}` : `${styles.boxes04} ${styles.no_active}`} >
                         <p className={styles.text_conteiner1}>Выбери своего дипломного руководителя:</p>
                             <div className={styles.dop_box}>
                             <div className={styles.dip_box}>
                                 <select name="dip_ruc" className={styles.dip_ruc} >
                                     <option className={styles.group_option} defaultValue disabled >Твой дипломный руководитель</option>
-                                    <option>Вербицкая М.А.</option>
-                                    <option>Каламбет </option>
-                                    <option>Антоненко</option>
+                                    <option>Иванов Иван Иванович</option>
+                                    <option>Васильев Василий Васильевич</option>
+                                    <option>Александров Александр Александровичь</option>
                                 </select>
                                 <p className={styles.dip_text11}>Если твой дипломный руководитель не является сотрудником колледжа РКСИ, ты можешь пригласить его присоединиться к нам!  </p>
                                 <p className={styles.dip_text2}>Введи Email и отправляй приглашение!</p>
@@ -245,7 +188,7 @@ export const MyDiplom=()=>{
                             </div>
                             <div className={styles.boxes3}>
                             <button
-                                onClick={() => setCat(3)}
+                                onClick={() => setCat(2)}
                                 type="button" 
                                 name="cat" 
                                 id="button" 

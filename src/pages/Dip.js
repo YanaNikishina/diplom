@@ -26,7 +26,7 @@ export const Dip =() =>{
                         <div className={styles.subject}>
                             <img className={styles.contacts_photo2} src ={Avatar2} alt="Photos"/>
                             <div className={styles.stud_box2}> 
-                                <p className={styles.subject_text4}>Вербицкая Маргарита Алексеевна</p>
+                                <p className={styles.subject_text4}>Сидорова Александра </p>
                                 <p className={styles.subject_text3}>Дипломный руководитель</p>
                             </div>  
                         </div>
@@ -70,7 +70,7 @@ export const Dip =() =>{
                         <div className={styles.box02}>
                         <p className={styles.dip_text2}>2021</p>
                         <ul className={styles.studs}>
-                            <Link className={styles.link} to ={'/pages/Student'}>
+                            <Link className={styles.link} to ={'/pages/Student1'}>
                                 <li className={styles.stud}> Никишина Я.Е.</li>
                             </Link>
                             <li className={styles.stud}> Мамин Д.И.</li>

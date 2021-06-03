@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {Link} from 'react-router-dom'
 import sort from '../img/Swap.svg'
 import del from '../img/Delete.svg'
@@ -23,29 +23,29 @@ export const Dipruc =() =>{
                             <div className={styles.text2_b}>
                                 <p className={styles.text2}>ФИО</p>
                                 <p className={styles.text4}>Телефон</p>
-                                <p className={styles.text2}>Дипломники</p>
+                                <p className={styles.text04}>Дипломники</p>
                                 <p className={styles.text2}>Действие</p>
                             </div>
                             <div className={styles.box_in}>
                                 <div className={styles.text3_b}>
                                     <Link className={styles.link} to ={'/pages/Dipruc'}>
-                                    <p className={styles.text3}>Вербицкая</p>
+                                    <p className={styles.text3}> Иванов</p>
                                 </Link>
-                                    <p className={styles.text3}>Глушенко</p>
-                                    <p className={styles.text3}>Антоненко </p>
+                                    <p className={styles.text3}>Александров</p>
+                                    <p className={styles.text3}>Петров </p>
                                     
                                 </div>
                                 <div className={styles.text4_b}>
-                                    <p className={styles.text3}>8 928 456 12 23</p>
-                                    <p className={styles.text3}>8 928 767 84 53</p>
-                                    <p className={styles.text3}>8 928 267 14 53</p>
+                                    <p className={styles.text3}>8 928 000 00 00</p>
+                                    <p className={styles.text3}>8 928 000 00 00</p>
+                                    <p className={styles.text3}>8 928 000 00 00</p>
                                     
                                     
                                 </div>
-                                <div className={styles.text3_b}>
-                                    <p className={styles.text3}>30</p>
-                                    <p className={styles.text3}>20</p>
-                                    <p className={styles.text3}>10</p>
+                                <div className={styles.text6_b}>
+                                    <p className={styles.text3}>5</p>
+                                    <p className={styles.text3}>3</p>
+                                    <p className={styles.text3}>2</p>
                                     
                                 </div>
                                 <div className={styles.text5_b}>

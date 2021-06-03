@@ -29,7 +29,7 @@ export const Zakaz=()=>{
                     </div>
                         <div className= {answer1 ? `${styles.dip_text1} ${styles.active}`:`${styles.dip_text1} ${styles.no_active}`}>
                             <p className={styles.text}>Компания</p>
-                            <p>Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком.</p>
+                            <p className={styles.answer}>Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком.</p>
                             <p className={styles.term_text}>Вы можете оставить комментарий</p>
                             <input name="name" className={`${styles.input} ${styles.input_text}`} placeholder="Комментарий.."/>
                             <button type='submit' className={styles.btn}>
@@ -46,7 +46,7 @@ export const Zakaz=()=>{
                     </div>
                     <div className= {answer2 ? `${styles.dip_text1} ${styles.active}`:`${styles.dip_text1} ${styles.no_active}`}>
                             <p className={styles.text}>Компания</p>
-                            <p>Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком.</p>
+                            <p className={styles.answer}>Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком.</p>
                             <p className={styles.term_text}>Вы можете оставить комментарий</p>
                             <input name="name" className={`${styles.input} ${styles.input_text}`} placeholder="Комментарий.."/>
                             <button type='submit' className={styles.btn}>
@@ -63,7 +63,7 @@ export const Zakaz=()=>{
                     </div>
                     <div className= {answer3 ? `${styles.dip_text1} ${styles.active}`:`${styles.dip_text1} ${styles.no_active}`}>
                             <p className={styles.text}>Компания</p>
-                            <p>Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком.</p>
+                            <p className={styles.answer}>Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком.</p>
                             <p className={styles.term_text}>Вы можете оставить комментарий</p>
                             <input name="name" className={`${styles.input} ${styles.input_text}`} placeholder="Комментарий.."/>
                             <button type='submit' className={styles.btn}>
@@ -80,7 +80,7 @@ export const Zakaz=()=>{
                     </div>
                     <div className= {answer4 ? `${styles.dip_text1} ${styles.active}`:`${styles.dip_text1} ${styles.no_active}`}>
                             <p className={styles.text}>Компания</p>
-                            <p>Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком.</p>
+                            <p className={styles.answer}>Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком.</p>
                             <p className={styles.term_text}>Вы можете оставить комментарий</p>
                             <input name="name" className={`${styles.input} ${styles.input_text}`} placeholder="Комментарий.."/>
                             <button type='submit' className={styles.btn}>
@@ -97,7 +97,7 @@ export const Zakaz=()=>{
                     </div>
                     <div className= {answer5 ? `${styles.dip_text1} ${styles.active}`:`${styles.dip_text1} ${styles.no_active}`}>
                             <p className={styles.text}>Компания</p>
-                            <p>Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком.</p>
+                            <p className={styles.answer}>Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком. Какой то очень длинный и развернутый ответ на вопрос понятным языком.</p>
                             <p className={styles.term_text}>Вы можете оставить комментарий</p>
                             <input name="name" className={`${styles.input} ${styles.input_text}`} placeholder="Комментарий.."/>
                             <button type='submit' className={styles.btn}>

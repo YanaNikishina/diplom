@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import photo from '../img/photo.svg'
 import Avatar1 from '../img/Avatar1.svg'
 import Avatar2 from '../img/Avatar2.svg'
@@ -33,7 +33,7 @@ export const Stud =() =>{
                             </div>
                             <div className={styles.subject2}>
                                 <p className={styles.contacts_text1}>Твоя тема диплома</p>
-                                <p className={styles.subject_text2}>Разработка клиентской части портала дипомников ГБПОУ <br/>РО "РКСИ"</p>
+                                <p className={styles.subject_text2}>Разработка клиентской части портала дипомников ГБПОУ РО "РКСИ"</p>
                             </div>
                             <div className={styles.contacts}>
                                 <div>
@@ -52,8 +52,8 @@ export const Stud =() =>{
                             <div className={styles.box_dip_guid}>
                                 <img className={styles.dip_guid_photo1} src ={Avatar1} alt="Photos"/>
                                 <div>
-                                    <p className={styles.dip_guid_text2}>Вербицкая Маргарита Алексеевка</p>
-                                    <p className={styles.dip_guid_text3}>8 928 874 23 45</p>
+                                    <p className={styles.dip_guid_text2}>Александра  Александровна</p>
+                                    <p className={styles.dip_guid_text3}>8 928 000 00 00</p>
                                 </div>
                                 
                             </div>
@@ -64,8 +64,8 @@ export const Stud =() =>{
                         <div className={styles.box_class_guid}>
                             <img className={styles.class_guid_photo1} src ={Avatar1} alt="Photos"/>
                             <div>
-                                <p className={styles.class_guid_text2}>Ревнивцева Оксана Александровна</p>
-                                <p className={styles.class_guid_text3}>8 928 874 23 45</p>
+                                <p className={styles.class_guid_text2}>Екатерина Сидорова</p>
+                                <p className={styles.class_guid_text3}>8 928 000 00 00</p>
                             </div>
                         </div>
                     </div>

@@ -25,7 +25,7 @@ export const DashboardPU =() =>{
             </div>
             <MenuPU className={styles.menu}></MenuPU>
             <div className={styles.big_conteiner}>
-                <p className={styles.text_hi}>Здравствуйте, Алла!</p>
+                <p className={styles.text_hi}>Здравствуйте, Катерина!</p>
                 <div className={styles.conteiner}>
                     <div className={styles.box_4}>
 
@@ -75,8 +75,8 @@ export const DashboardPU =() =>{
                         <div className={styles.box_dip_guid}>
                             <img className={styles.dip_guid_photo1} src ={Avatar1} alt="Photos"/>
                             <div>
-                                <p className={styles.dip_guid_text2}>Вербицкая Маргарита Алексеевка</p>
-                                <p className={styles.dip_guid_text3}>8 928 874 23 45</p>
+                                <p className={styles.dip_guid_text2}>Иванова Валерия Викторавна</p>
+                                <p className={styles.dip_guid_text3}>8 928 000 00 00</p>
                             </div>
                             
                         </div>
@@ -88,8 +88,8 @@ export const DashboardPU =() =>{
                         <div className={styles.box_class_guid}>
                             <img className={styles.class_guid_photo1} src ={Avatar1} alt="Photos"/>
                             <div>
-                                <p className={styles.class_guid_text2}>Ревнивцева Оксана Александровна</p>
-                                <p className={styles.class_guid_text3}>8 928 874 23 45</p>
+                                <p className={styles.class_guid_text2}>Иванова Валерия Викторавна</p>
+                                <p className={styles.class_guid_text3}>8 928 000 00 00</p>
                             </div>
                         </div>
                     </div>
@@ -99,8 +99,8 @@ export const DashboardPU =() =>{
                         <div className={styles.box_dep_man}>
                             <img className={styles.dep_man_photo1} src ={Avatar1} alt="Photos"/>
                             <div>
-                            <p className={styles.dep_man_text2}>Шлюпкина Алла Ильинична</p>
-                            <p className={styles.dep_man_text3}>8 928 874 23 45</p>
+                            <p className={styles.dep_man_text2}>Иванова Валерия Викторавна</p>
+                            <p className={styles.dep_man_text3}>8 928 000 00 00</p>
                             </div>
                         </div>
                     </div>

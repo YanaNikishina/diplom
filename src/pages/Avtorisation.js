@@ -1,28 +1,34 @@
-import React, { useState }  from 'react'
+import React  from 'react'
 import {Link} from 'react-router-dom'
 import logo from '../img/logo.svg'
 import styles from '../modules/avtoris.module.css'
+import { Formik, Field, Form } from "formik";
 
 
 export const Avtoris =() =>{
     
-    const[form, setForm] =useState({
-        mail: '',
-        pass: ''
+    // const[form, setForm] =useState({
+    //     mail: '',
+    //     pass: ''
 
-    })
+    // })
 
-    const changeInputHandler = (event) => {
-        setForm({...form, [event.target.name]: event.target.value})
-        };
+    // const changeInputHandler = (event) => {
+    //     setForm({...form, [event.target.name]: event.target.value})
+    //     };
 
-    const send =()=>{
-        console.log(form)
-        fetch('', 'POST',{...form},null)
-    }
+    // const send =()=>{
+    //     console.log(form)
+    //     fetch('', 'POST',{...form},null)
+    // }
     return(
+
+
+        
        
         <div className={styles.body}>
+
+
                 <header className={styles.header}>
                     <img src={logo} alt="Logo"/>
                 </header>
@@ -52,24 +58,27 @@ export const Avtoris =() =>{
                         </Link>
                 </div>
 
-                <form  className={styles.conteiner_2} >
+                <div  className={styles.conteiner_2} >
                     <h1 className={styles.h1} >Авторизация</h1>
                     <p  className={styles.text_vvod}> Введите ваши данные для входа в аккаунт.</p>
-                    <input  name="mail" 
-                    onChange={changeInputHandler} value={form.mail} 
-                    className={`${styles.input} ${styles.input_mail}`} placeholder=" E-mail"/>
-                    <input  name="pass" 
-                    onChange={changeInputHandler} value={form.pass}
-                     className={`${styles.input} ${styles.input_pass}`} placeholder=" Пароль"/>
-                    <Link to ={'/pages/ForgotPass'} className={styles.forgot_pass}>Забыли пароль?</Link>
-                    <Link className={styles.link} to ={'/pages/Dashboard'}>
-                    <button type='submit' 
-                    onClick={send} 
-                    className={styles.btn}>
-                        <span className={styles.txakk}>Войти</span>  
-                    </button> 
-                    </Link>
-                </form> 
+
+                    <Formik
+                        initialValues={{ email: "",pass: "" }}
+                        onSubmit={async values => {
+                        await new Promise(resolve => setTimeout(resolve, 500));
+                        console.log(JSON.stringify(values, null, 2));
+                        }}
+                    >
+                        <Form className={styles.form}>
+                            <Field   className={styles.input_mail} placeholder=" E-mail" name="email" type="email" />
+                            <Field    className={styles.input_pass} placeholder=" Пароль" name="pass" type="text" />
+                            <Link to ={'/pages/ForgotPass'} className={styles.forgot_pass}>Забыли пароль?</Link>
+                            <button    className={styles.btn} type="submit"><span className={styles.txakk}>Войти</span>  </button>
+                        </Form>
+                    </Formik>
+
+                    
+                </div> 
 
             </div>
         </div>

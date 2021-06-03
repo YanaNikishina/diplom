@@ -40,7 +40,7 @@ export const GroupStud =() =>{
                                     <p className={styles.text_box1}>Список всех групп</p>
                                     <div className={styles.text2_b}>
                                         <p className={styles.text2}>Группа</p>
-                                        <p className={styles.text2}>Руководитель</p>
+                                        <p className={styles.text02}>Руководитель</p>
                                         <p className={styles.text2}>Год выпуска</p>
                                         <p className={styles.text2}>Действие</p>
                                     </div>
@@ -52,12 +52,12 @@ export const GroupStud =() =>{
                                             <p className={styles.text3}>ПОКС-44</p>
                                         </div>
                                         <div className={styles.text4_b}>
-                                            <p className={styles.text3}>Ревнивцева О.А</p>
-                                            <p className={styles.text3}>Ревнивцева О.А</p>
-                                            <p className={styles.text3}>Ревнивцева О.А</p>
-                                            <p className={styles.text3}>Ревнивцева О.А</p>
+                                            <p className={styles.text3}>Васильева</p>
+                                            <p className={styles.text3}>Васильева</p>
+                                            <p className={styles.text3}>Васильева</p>
+                                            <p className={styles.text3}>Васильева</p>
                                         </div>
-                                        <div className={styles.text3_b}>
+                                        <div className={styles.text6_b}>
                                             <p className={styles.text3}>2021</p>
                                             <p className={styles.text3}>2021</p>
                                             <p className={styles.text3}>2021</p>
@@ -84,7 +84,7 @@ export const GroupStud =() =>{
                                     <p className={styles.text2_box}>Количество студентов 20</p>
                                     <div className={styles.text2_b}>
                                         <p className={styles.text2}>ФИО</p>
-                                        <p className={styles.text2}>Телефон</p>
+                                        <p className={styles.text02}>Телефон</p>
 
                                         <p className={styles.text2}>Действие</p>
                                     </div>
@@ -92,16 +92,16 @@ export const GroupStud =() =>{
                                         <div className={styles.text3_b}>
                                             <p className={styles.text3}>Мамин Д.И</p>
                                             <p className={styles.text3}>Никишина Я.Е</p>
-                                            <p className={styles.text3}>Алешина В.В</p>
-                                            <p className={styles.text3}>Аджан М.А</p>
+                                            <p className={styles.text3}>Мамин Д.И</p>
+                                            <p className={styles.text3}>Никишина Я.Е</p>
                                         </div>
                                         <div className={styles.text4_b}>
-                                            <p className={styles.text3}>8 928 456 65 34</p>
-                                            <p className={styles.text3}>8 928 456 65 34</p>
-                                            <p className={styles.text3}>8 928 456 65 34</p>
-                                            <p className={styles.text3}>8 928 456 65 34</p>
+                                            <p className={styles.text3}>8 928 000 00 00</p>
+                                            <p className={styles.text3}>8 928 000 00 00</p>
+                                            <p className={styles.text3}>8 928 000 00 00</p>
+                                            <p className={styles.text3}>8 928 000 00 00</p>
                                         </div>
-                                        <div className={styles.text5_b}>
+                                        <div className={styles.text7_b}>
                                             <div className={styles.box_red}>
                                                 <img className={styles.del} src ={redact} alt="Photos"/>
                                                 <img className={styles.del} src ={redact} alt="Photos"/>
@@ -145,24 +145,30 @@ export const GroupStud =() =>{
                                     <p className={styles.text_sort}>Отфильтровать<br/> группы</p>
                                     </div>
                                     <div className={styles.sortil}>
-                                    <p className={styles.term_text}>Год выпуска</p>
-                                        <div className={styles.sortyear}>
-                                        <p className={styles.textyear}>2021</p>
-                                        <p className={styles.textyear}>2020</p>
-                                        <p className={styles.textyear}>2019</p>
-                                        <p className={styles.textyear}>2018</p>
+                                        <div>
+                                            <p className={styles.term_text}>Год выпуска</p>
+                                            <div className={styles.sortyear}>
+                                                <p className={styles.textyear}>2021</p>
+                                                <p className={styles.textyear}>2020</p>
+                                                <p className={styles.textyear}>2019</p>
+                                                <p className={styles.textyear}>2018</p>
+                                            </div>
                                         </div>
-                                    <p className={styles.term_text}>Руководитель группы</p>
-                                    <div className={styles.sortruc}>
-                                        <p className={styles.textruc}>Ревнивцева О.А</p>
-                                        <p className={styles.textruc}>Шлюпкина А. И</p>
+                                        <div>
+                                            <p className={styles.term_text}>Руководитель группы</p>
+                                            <div className={styles.sortruc}>
+                                                <p className={styles.textruc}>Васильева </p>
+                                                <p className={styles.textruc}>Петренко</p>
+                                            </div>
                                         </div>
-                                    <p className={styles.term_text}>По группе</p>
+                                        <div>
+                                        <p className={styles.term_text}>По группе</p>
                                         <div className={styles.sortruc}>
                                             <p className={styles.textruc}>ПОКС-41</p>
                                             <p className={styles.textruc}>ПОКС-42</p>
                                             <p className={styles.textruc}>ПОКС-43</p>
                                             <p className={styles.textruc}>ПОКС-44</p>
+                                        </div>
                                         </div>
                                     </div>
 
@@ -175,8 +181,8 @@ export const GroupStud =() =>{
                                 <p className={styles.text_box1}>Список всех студентов</p>
                                 <div className={styles.text2_b}>
                                     <p className={styles.text2}>ФИО</p>
-                                    <p className={styles.text2}>Группа</p>
-                                    <p className={styles.text2}>Статус</p>
+                                    <p className={styles.text02}>Группа</p>
+                                    <p className={styles.text022}>Статус</p>
                                     <p className={styles.text2}>Действие</p>
                                 </div>
                                 <div className={styles.box_in}>
@@ -211,7 +217,7 @@ export const GroupStud =() =>{
                                         <p className={styles.text3}>Активен</p>
                                         <p className={styles.text3}>Неактивен</p>
                                     </div>
-                                    <div className={styles.text5_b}>
+                                    <div className={styles.text7_b}>
                                         <div className={styles.box_red}>
                                             <img className={styles.del} src ={redact} alt="Photos"/>
                                             <img className={styles.del} src ={redact} alt="Photos"/>
@@ -239,7 +245,7 @@ export const GroupStud =() =>{
                             <div className={styles.sort}>
                                 <div className={styles.box_sort}>
                                 <img className={styles.sortimg} src ={sort} alt="Photos"/>
-                                <p className={styles.text_sort}>Сортировать<br/> группы</p>
+                                <p className={styles.text_sort}>Сортировать<br/> студентов</p>
                                 </div>
                                 <div className={styles.sortil}>
                                 <p className={styles.term_text}>По алфавиту</p>
@@ -249,20 +255,24 @@ export const GroupStud =() =>{
                             <div className={styles.filtr}>
                             <div className={styles.box_sort}>
                                 <img className={styles.sortimg} src ={filtr} alt="Photos"/>
-                                <p className={styles.text_sort}>Отфильтровать<br/> группы</p>
+                                <p className={styles.text_sort}>Отфильтровать<br/> студентов</p>
                                 </div>
                                 <div className={styles.sortil}>
+                                    <div>
                                 <p className={styles.term_text}>Руководитель группы</p>
                                 <div className={styles.sortruc}>
-                                    <p className={styles.textruc}>Ревнивцева О.А</p>
-                                    <p className={styles.textruc}>Шлюпкина А. И</p>
+                                    <p className={styles.textruc}>Николаева П.О</p>
+                                    <p className={styles.textruc}>Василенко Н.В</p>
                                     </div>
+                                    </div>
+                                    <div>
                                 <p className={styles.term_text}>По группе</p>
-                                    <div className={styles.sortruc}>
+                                    <div className={styles.sortruc2}>
                                         <p className={styles.textruc}>ПОКС-41</p>
                                         <p className={styles.textruc}>ПОКС-42</p>
                                         <p className={styles.textruc}>ПОКС-43</p>
                                         <p className={styles.textruc}>ПОКС-44</p>
+                                    </div>
                                     </div>
                                 </div>
                                 

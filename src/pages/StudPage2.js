@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../modules/studPage.module.css'
 import {Footer} from '../components/Footer'
-import {MenuDR} from '../components/MenuDR'
+import {MenuPU} from '../components/MenuPU'
 import photo from '../img/photo.svg'
 import Avatar2 from '../img/Avatar2.svg'
 
@@ -9,14 +9,14 @@ import {CircularProgressbar} from "react-circular-progressbar";
 import { buildStyles } from 'react-circular-progressbar'
 import "react-circular-progressbar/dist/styles.css";
 
-export const Student=()=>{
+export const Student2=()=>{
     const percentage = 44;
     return(
         <div className={styles.body}>
             <div className={styles.massg}>
                 <p className ={styles.text_massg}>Важное сообщение!!</p>
             </div>
-            <MenuDR className={styles.menu}></MenuDR>
+            <MenuPU className={styles.menu}></MenuPU>
             <div className={styles.big_conteiner}>
                 <p className={styles.text_hi}>Страница студента</p>
                 <div className={styles.conteiner}>

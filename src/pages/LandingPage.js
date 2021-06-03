@@ -34,7 +34,7 @@ export const LandPag=()=>{
                     </div>
                     <div className={styles.text_IT}>
                     <h1>Соберём IT-команду для вашего проекта</h1>
-                    <p className={styles.text_p}>Примите участие в пилотном проекте Ростовского-на-Дону<br/> колледжа связи и информатики, оставьте заявку на подбор<br/> 
+                    <p className={styles.text_p}>Примите участие в пилотном проекте Ростовского-на-Дону колледжа связи и информатики, оставьте заявку на подбор
                     группы студентов для реализации ваших задач.</p>
                     </div>
                     <form className={styles.btn_form}>
@@ -48,7 +48,7 @@ export const LandPag=()=>{
                 <div className={styles.conteiner}>
                 <h2 className={styles.h2}>Варианты работ</h2>
                 <p className={styles.text_s1}>
-                    В рамках дипломного проекта студенты — выпускники лучшего IT-колледжа<br/> помогут вам качественно и бесплатно (оплата по желанию) реализовать:
+                    В рамках дипломного проекта студенты — выпускники лучшего IT-колледжа помогут вам качественно и бесплатно (оплата по желанию) реализовать:
                 </p>
                 <div className={styles.typ_jobs}>
                 <div className={styles.job_1}>
@@ -93,7 +93,7 @@ export const LandPag=()=>{
              </div>
              <div className={styles.section_2}>
                 <div className={styles.conteiner}>
-                <h2 className={styles.h2}>Как это работает?</h2>
+                <h2 className={styles.h22}>Как это работает?</h2>
                 <div className={styles.typ_jobs2}>
                 <div className={styles.steps01}>
                     <div className={styles.step1}>
@@ -153,7 +153,7 @@ export const LandPag=()=>{
 
             <div className={styles.section_3}>
                 <div className={styles.conteiner}>
-                <h2 className={styles.h2}>Работы студентов</h2>
+                <h2 className={styles.h22}>Работы студентов</h2>
                 <div className={styles.example}>
                         <img className={styles.ex} src={phot}alt="Фото 6"/>
                         <img className={styles.ex} src={phot}alt="Фото 6"/>  
@@ -169,11 +169,11 @@ export const LandPag=()=>{
                 <div className={styles.conteiner}>
                     <div className={styles.part}>
                     <div className={styles.photo}>
-                    <img className={styles.back} src={backimg}alt="Фото 6"/>
+                    <img className={styles.back2} src={backimg}alt="Фото 6"/>
                     </div>
                     <div className={styles.forma}>
                         <h2 className={styles.h2}>Оставить заявку</h2>
-                        <p className={styles.text_s1}>
+                        <p className={styles.text_s2}>
                            Заполните форму и мы свяжемся с вами в ближайшее время
                         </p>
                         <input type="text" name="fiozak" className={`${styles.input} ${styles.input_fio}`} placeholder=" ФИО"/>
@@ -213,17 +213,22 @@ export const LandPag=()=>{
             <div className={styles.kont}>
                 <p className={styles.kontakts}>Наши контакты</p>
                 <div>
-                <p  className={styles.li}>Приемная директора</p>
-                <p className={styles.li} >+7 000 000 00 00</p>
-                <p className={styles.li}>+7 000 000 00 00</p>
-                <p className={styles.li} >Email.com</p>
+                <p  className={styles.li2}>Приемная директора</p>
+                <p className={styles.li2} >+7 000 000 00 00</p>
+                <p className={styles.li2}>+7 000 000 00 00</p>
+                <p className={styles.li2} >Email.com</p>
                 </div>
                 
             </div>
-            <img className={styles.back} src={vk}alt="Фото 6"/>
-            <img className={styles.back} src={ytub}alt="Фото 6"/>
-            <img className={styles.inst} src={inst}alt="Фото 6"/>
+            <div className={styles.ul2}> 
+            <a href='https://vk.com/pkcu_college'>
+            <img className={styles.back1} src={vk}alt="Фото 6"/></a>
+            <a href='https://www.youtube.com/channel/UCCQx7F4dRY_LcsRrJcZYGDQ'>
+            <img className={styles.back} src={ytub}alt="Фото 6"/></a>
+            <a href='https://www.instagram.com/rksi_ru/'>
+            <img className={styles.inst} src={inst}alt="Фото 6"/></a>
             </div>
+        </div>
             <p className={styles.info}>
                 © Государственное бюджетное профессиональное образовательное учреждение Ростовской области «Ростовский-на-Дону колледж связи и информатики»
                 <br/>Разработка: Никишина Яна и Мамин Даниэль

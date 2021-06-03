@@ -82,8 +82,8 @@ export const Dashboard =() =>{
                             <div className={styles.box_dip_guid}>
                                 <img className={styles.dip_guid_photo1} src ={Avatar1} alt="Photos"/>
                                 <div>
-                                    <p className={styles.dip_guid_text2}>Вербицкая Маргарита Алексеевка</p>
-                                    <p className={styles.dip_guid_text3}>8 928 874 23 45</p>
+                                    <p className={styles.dip_guid_text2}>Иванов Иван Иваночич</p>
+                                    <p className={styles.dip_guid_text3}>0 000 000 00 00</p>
                                 </div>
                                 
                             </div>
@@ -95,8 +95,8 @@ export const Dashboard =() =>{
                             <div className={styles.box_class_guid}>
                                 <img className={styles.class_guid_photo1} src ={Avatar1} alt="Photos"/>
                                 <div>
-                                    <p className={styles.class_guid_text2}>Ревнивцева Оксана Александровна</p>
-                                    <p className={styles.class_guid_text3}>8 928 874 23 45</p>
+                                    <p className={styles.class_guid_text2}>Иванов Иван Иванович</p>
+                                    <p className={styles.class_guid_text3}>0 000 000 00 00</p>
                                 </div>
                             </div>
                         </div>
@@ -106,8 +106,8 @@ export const Dashboard =() =>{
                             <div className={styles.box_dep_man}>
                                 <img className={styles.dep_man_photo1} src ={Avatar1} alt="Photos"/>
                                 <div>
-                                <p className={styles.dep_man_text2}>Шлюпкина Алла Ильинична</p>
-                                <p className={styles.dep_man_text3}>8 928 874 23 45</p>
+                                <p className={styles.dep_man_text2}>Иванов Иван Иванович</p>
+                                <p className={styles.dep_man_text3}>0 000 000 00 00</p>
                                 </div>
                             </div>
                         </div>

@@ -1,5 +1,4 @@
 
-@media (max-width:1399px){
 .big_conteiner{
     display: flex;
 }
@@ -305,7 +304,7 @@ font-weight: 100px;
 .link{
     text-decoration: none;
 }
-}
+
 @media (max-width:768px){
 
     .big_conteiner{
@@ -356,7 +355,7 @@ font-weight: 100px;
 
 }
 
-@media (max-width:2000px){
+@media (max-width:320px){
     .conteiner_1{
         background-image:url('../img/Group_913.svg');
         width: 100%;

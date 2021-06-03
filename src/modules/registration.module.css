@@ -1,4 +1,5 @@
 
+@media (max-width:1399px){
 .big_conteiner{
     display: flex;
 }
@@ -304,7 +305,7 @@ font-weight: 100px;
 .link{
     text-decoration: none;
 }
-
+}
 @media (max-width:768px){
 
     .big_conteiner{

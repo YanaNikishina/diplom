@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from '../modules/document.module.css'
-import {Footer} from '../components/Footer'
 import {MenuPU} from '../components/MenuPU'
 import photo from '../img/photo.svg'
 import paper from '../img/Paper.svg'
 import del from '../img/Delete.svg'
+import { FooterPU } from '../components/FooterPU'
 
 
 export const DocumentsPU=()=>{
@@ -88,7 +88,7 @@ export const DocumentsPU=()=>{
                     </div>
                 </div>
             </div>
-            <Footer></Footer>
+            <FooterPU/>
         </div>
     )
 }

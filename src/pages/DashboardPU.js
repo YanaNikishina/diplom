@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Avatar1 from '../img/Avatar1.svg'
 import del from '../img/DeleteW.svg'
 import styles from '../modules/dashPU.module.css'
-import {Footer} from '../components/Footer'
+import {FooterPU} from '../components/FooterPU'
 import {MenuPU} from '../components/MenuPU'
 
 import {CircularProgressbar} from "react-circular-progressbar";
@@ -115,7 +115,7 @@ export const DashboardPU =() =>{
                         </button> 
                     </div>
                 </div>
-                <Footer ></Footer>
+                <FooterPU/>
             </div>
         </div>
     )

@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from '../modules/document.module.css'
-import {Footer} from '../components/Footer'
 import {MenuDR} from '../components/MenuDR'
 import photo from '../img/photo.svg'
 import paper from '../img/Paper.svg'
+import { FooterDR } from '../components/FooterDR'
 
 
 export const DocumentsDR=()=>{
@@ -78,7 +78,7 @@ export const DocumentsDR=()=>{
                     </div>
                 </div>
             </div>
-            <Footer></Footer>
+            <FooterDR></FooterDR>
         </div>
     )
 }

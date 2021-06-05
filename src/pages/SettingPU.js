@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../modules/SettingProfStud.module.css'
-import {Footer} from '../components/Footer'
 import {MenuPU} from '../components/MenuPU'
+import { FooterPU } from '../components/FooterPU'
 
 export const SettingPU=()=>{
     return(
@@ -34,7 +34,7 @@ export const SettingPU=()=>{
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <FooterPU/>
         </div>
     )
 }

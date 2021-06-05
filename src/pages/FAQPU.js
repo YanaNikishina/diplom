@@ -1,9 +1,9 @@
 import React,{useState} from 'react'
 import styles from '../modules/faq.module.css'
-import {Footer} from '../components/Footer'
 import {MenuPU} from '../components/MenuPU'
 import del from '../img/Delete.svg'
 import redact from '../img/Redact.svg'
+import { FooterPU } from '../components/FooterPU'
 
 export const FAQPU=()=>{
     const [answer1, setAnswer1] = useState(false)
@@ -82,7 +82,7 @@ export const FAQPU=()=>{
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <FooterPU/>
         </div>
     )
 }

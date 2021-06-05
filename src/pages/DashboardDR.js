@@ -4,12 +4,12 @@ import photo from '../img/photo.svg'
 import photo_news from '../img/photo_news.svg'
 import Arrow_Right from '../img/Arrow - Right.svg'
 import styles from '../modules/dashboardDR.module.css'
-import {Footer} from '../components/Footer'
 import {MenuDR} from '../components/MenuDR'
 
 import {CircularProgressbar} from "react-circular-progressbar";
 import { buildStyles } from 'react-circular-progressbar'
 import "react-circular-progressbar/dist/styles.css";
+import { FooterDR } from '../components/FooterDR'
 
 export const DashboardDR =() =>{
     const percentage = 60;
@@ -110,7 +110,7 @@ export const DashboardDR =() =>{
                         
                     </div>
                 </div>
-                <Footer/>
+                <FooterDR/>
             </div>
         </div>
     )

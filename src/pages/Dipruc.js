@@ -4,10 +4,19 @@ import sort from '../img/Swap.svg'
 import del from '../img/Delete.svg'
 import redact from '../img/Redact.svg'
 import styles from '../modules/diprucs.module.css'
-import {Footer} from '../components/Footer'
 import {MenuPU} from '../components/MenuPU'
+import { FooterPU } from '../components/FooterPU'
 
 export const Dipruc =() =>{
+    function edit() {
+		alert ("Нажата кнопка редактировать");
+	};
+
+    function dell() {
+		alert ("Нажата кнопка удаления");
+	};
+
+
     return(
         <div className={styles.body}>
             <div className={styles.massg} >
@@ -50,15 +59,15 @@ export const Dipruc =() =>{
                                 </div>
                                 <div className={styles.text5_b}>
                                     <div className={styles.box_red}>
-                                        <img className={styles.del} src ={redact} alt="Photos"/>
-                                        <img className={styles.del} src ={redact} alt="Photos"/>
-                                        <img className={styles.del} src ={redact} alt="Photos"/>
+                                        <img onClick={edit} className={styles.del} src ={redact} alt="Photos"/>
+                                        <img onClick={edit} className={styles.del} src ={redact} alt="Photos"/>
+                                        <img onClick={edit} className={styles.del} src ={redact} alt="Photos"/>
                                         
                                     </div>
                                     <div className={styles.box_red}>
-                                        <img className={styles.del} src ={del} alt="Photos"/>
-                                        <img className={styles.del} src ={del} alt="Photos"/>
-                                        <img className={styles.del} src ={del} alt="Photos"/>
+                                        <img onClick={dell} className={styles.del} src ={del} alt="Photos"/>
+                                        <img onClick={dell} className={styles.del} src ={del} alt="Photos"/>
+                                        <img onClick={dell} className={styles.del} src ={del} alt="Photos"/>
                                     </div>
                             </div>
                         </div>
@@ -80,7 +89,7 @@ export const Dipruc =() =>{
                             
                 </div>
             </div>
-            <Footer/>
+            <FooterPU/>
             </div>
         </div>
     )

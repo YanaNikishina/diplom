@@ -18,11 +18,9 @@ import li7 from '../img/7.svg'
 import li8 from '../img/8.svg'
 
 import backimg from '../img/Фон.svg'
-import vk from '../img/vkontakte.svg'
-import ytub from '../img/youtube2.svg'
-import inst from '../img/instagram.svg'
 import phot from '../img/Rectangle.svg'
 
+import {FooterLP} from '../components/FooterLP'
 
 export const LandPag=()=>{
     return(
@@ -190,51 +188,7 @@ export const LandPag=()=>{
                 </div>
             </div>
 
-
-            <footer className={styles.footer_fon}>
-        <div className={styles.conteiner1}>
-            <div>
-                <p className={styles.pr}>Наши партнеры</p>
-                <div className={styles.partners}>
-                    <div>
-                        <p className={styles.li} >Министерство информационных технологий и связи РО</p>
-                        <p className={styles.li}>Ростовский филиал ПАО «Ростелеком»</p>
-                        <p className={styles.li} >УФПС Ростовской области</p>
-                        <p  className={styles.li}>Новостной ИТ-портал Ростова TechnoDrive.ru</p>
-                        </div>
-                        <div>
-                        <p className={styles.li} >Филиал РТРС «Ростовский ОРТПЦ»</p>
-                        <p className={styles.li}>«Союз работодателей Ростовской области»</p>
-                        <p className={styles.li} >Научно-производственное предприятие «Гамма»</p>
-                        <p className={styles.li}>ГТРК «Дон-ТР»</p>
-                        </div>
-                </div>
-            </div>
-            <div className={styles.kont}>
-                <p className={styles.kontakts}>Наши контакты</p>
-                <div>
-                <p  className={styles.li2}>Приемная директора</p>
-                <p className={styles.li2} >+7 000 000 00 00</p>
-                <p className={styles.li2}>+7 000 000 00 00</p>
-                <p className={styles.li2} >Email.com</p>
-                </div>
-                
-            </div>
-            <div className={styles.ul2}> 
-            <a href='https://vk.com/pkcu_college'>
-            <img className={styles.back1} src={vk}alt="Фото 6"/></a>
-            <a href='https://www.youtube.com/channel/UCCQx7F4dRY_LcsRrJcZYGDQ'>
-            <img className={styles.back} src={ytub}alt="Фото 6"/></a>
-            <a href='https://www.instagram.com/rksi_ru/'>
-            <img className={styles.inst} src={inst}alt="Фото 6"/></a>
-            </div>
-        </div>
-            <p className={styles.info}>
-                © Государственное бюджетное профессиональное образовательное учреждение Ростовской области «Ростовский-на-Дону колледж связи и информатики»
-                <br/>Разработка: Никишина Яна и Мамин Даниэль
-            </p>
-            
-    </footer>
+            <FooterLP></FooterLP>
         </div>
     )
 }

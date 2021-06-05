@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from '../modules/instruction.module.css'
-import {Footer} from '../components/Footer'
 import {MenuPU} from '../components/MenuPU'
 import redact from '../img/Redact.svg'
+import { FooterPU } from '../components/FooterPU'
 
 export const InstructPU=()=>{
     return(
@@ -81,7 +81,7 @@ export const InstructPU=()=>{
                     </div>
                 </div>   
             </div>
-            <Footer></Footer>
+            <FooterPU/>
         </div>
     )
 }

@@ -1,8 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import styles from '../modules/students.module.css'
-import {Footer} from '../components/Footer'
 import {MenuDR} from '../components/MenuDR'
+import { FooterDR } from '../components/FooterDR'
 
 export const Students=()=>{
     return(
@@ -83,7 +83,7 @@ export const Students=()=>{
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <FooterDR/>
         </div>
     )
 }

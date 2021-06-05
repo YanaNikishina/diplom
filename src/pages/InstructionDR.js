@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../modules/instruction.module.css'
-import {Footer} from '../components/Footer'
 import {MenuDR} from '../components/MenuDR'
+import { FooterDR } from '../components/FooterDR'
 
 export const InstructDR=()=>{
     return(
@@ -70,7 +70,7 @@ export const InstructDR=()=>{
                     </div>
                 </div>   
             </div>
-            <Footer></Footer>
+            <FooterDR/>
         </div>
     )
 }

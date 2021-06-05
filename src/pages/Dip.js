@@ -3,12 +3,12 @@ import {Link} from 'react-router-dom'
 import photo from '../img/photo.svg'
 import Avatar2 from '../img/Avatar2.svg'
 import styles from '../modules/dip.module.css'
-import {Footer} from '../components/Footer'
 import {MenuPU} from '../components/MenuPU'
 
 import {CircularProgressbar} from "react-circular-progressbar";
 import { buildStyles } from 'react-circular-progressbar'
 import "react-circular-progressbar/dist/styles.css";
+import { FooterPU } from '../components/FooterPU'
 
 export const Dip =() =>{
     const percentage = 44;
@@ -132,7 +132,7 @@ export const Dip =() =>{
                         </div>
                     </div>
                 </div>
-                <Footer/>
+                <FooterPU/>
             </div>
         </div>
     )

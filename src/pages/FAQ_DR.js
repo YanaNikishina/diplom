@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import styles from '../modules/faq.module.css'
-import {Footer} from '../components/Footer'
 import {MenuDR} from '../components/MenuDR'
+import { FooterDR } from '../components/FooterDR'
 
 export const FAQDR=()=>{
     const [answer1, setAnswer1] = useState(false)
@@ -60,7 +60,7 @@ export const FAQDR=()=>{
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <FooterDR/>
         </div>
     )
 }

@@ -2,7 +2,6 @@ import React from 'react'
 import photo from '../img/photo.svg'
 import photo_news from '../img/photo_news.svg'
 import Arrow_Right from '../img/Arrow - Right.svg'
-import Avatar1 from '../img/Avatar1.svg'
 import Avatar2 from '../img/Avatar2.svg'
 import styles from '../modules/dashboard.module.css'
 import {Footer} from '../components/Footer'
@@ -11,9 +10,10 @@ import {Menu} from '../components/Menu'
 import {CircularProgressbar} from "react-circular-progressbar";
 import { buildStyles } from 'react-circular-progressbar'
 import "react-circular-progressbar/dist/styles.css";
+import { Card } from '../components/Card'
 
 export const Dashboard =() =>{
-    
+
     const percentage = 44;
     
     return(
@@ -75,48 +75,14 @@ export const Dashboard =() =>{
 
                     </div>
 
-                    <div className={styles.box_3}>
 
-                        <div className={styles.dip_guid}>
-                            <p className={styles.dip_guid_text1}>Твой дипломный руководитель</p>
-                            <div className={styles.box_dip_guid}>
-                                <img className={styles.dip_guid_photo1} src ={Avatar1} alt="Photos"/>
-                                <div>
-                                    <p className={styles.dip_guid_text2}>Иванов Иван Иваночич</p>
-                                    <p className={styles.dip_guid_text3}>0 000 000 00 00</p>
-                                </div>
-                                
-                            </div>
-                            
-                        </div>
+                    <Card className={styles.card}></Card>
 
-                        <div className={styles.class_guid}>
-                            <p className={styles.class_guid_text1}>Твой классный руководитель</p>
-                            <div className={styles.box_class_guid}>
-                                <img className={styles.class_guid_photo1} src ={Avatar1} alt="Photos"/>
-                                <div>
-                                    <p className={styles.class_guid_text2}>Иванов Иван Иванович</p>
-                                    <p className={styles.class_guid_text3}>0 000 000 00 00</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className={styles.dep_man}>
-                            <p className={styles.dep_man_text1}>Твой зав. отделения</p>
-                            <div className={styles.box_dep_man}>
-                                <img className={styles.dep_man_photo1} src ={Avatar1} alt="Photos"/>
-                                <div>
-                                <p className={styles.dep_man_text2}>Иванов Иван Иванович</p>
-                                <p className={styles.dep_man_text3}>0 000 000 00 00</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
 
                     <div className={styles.box_4}>
 
                         <div className={styles.term}>
+                            
                             <p className={styles.term_text1}>Сроки выполнения дипломной работы</p>
                             <div className={styles.box_term}>
                                 <div className={styles.box_term1}>

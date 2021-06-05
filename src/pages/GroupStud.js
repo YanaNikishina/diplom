@@ -5,8 +5,8 @@ import redact from '../img/Redact.svg'
 import styles from '../modules/groupstud.module.css'
 import sort from '../img/Swap.svg'
 import filtr from '../img/Filter.svg'
-import {Footer} from '../components/Footer'
 import {MenuPU} from '../components/MenuPU'
+import { FooterPU } from '../components/FooterPU'
 
 export const GroupStud =() =>{
     const [cat, setCat] = useState(1)
@@ -283,7 +283,7 @@ export const GroupStud =() =>{
                     </div>
                     </div>
                 </div>
-                <Footer className={styles.footer}></Footer>
+                <FooterPU className={styles.footer}/>
             </div>
         </div>
     )

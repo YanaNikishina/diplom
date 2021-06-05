@@ -1,8 +1,8 @@
 import React from 'react'
 import und from '../img/undraw.svg'
 import styles from '../modules/users.module.css'
-import {Footer} from '../components/Footer'
 import {MenuPU} from '../components/MenuPU'
+import { FooterPU } from '../components/FooterPU'
 
 export const Users =() =>{
     return(
@@ -42,7 +42,7 @@ export const Users =() =>{
                         <img className={styles.contacts_photo} src ={und} alt="Photos"/>
                     </div>
                 </div>
-                <Footer/>
+                <FooterPU/>
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../modules/SettingProfStud.module.css'
-import {Footer} from '../components/Footer'
 import {MenuDR} from '../components/MenuDR'
+import { FooterDR } from '../components/FooterDR'
 
 export const SettingDR=()=>{
     return(
@@ -34,7 +34,7 @@ export const SettingDR=()=>{
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <FooterDR/>
         </div>
     )
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from '../modules/studPage.module.css'
-import {Footer} from '../components/Footer'
 import {MenuDR} from '../components/MenuDR'
 import photo from '../img/photo.svg'
 import Avatar2 from '../img/Avatar2.svg'
@@ -8,6 +7,7 @@ import Avatar2 from '../img/Avatar2.svg'
 import {CircularProgressbar} from "react-circular-progressbar";
 import { buildStyles } from 'react-circular-progressbar'
 import "react-circular-progressbar/dist/styles.css";
+import { FooterDR } from '../components/FooterDR'
 
 export const Student=()=>{
     const percentage = 44;
@@ -80,7 +80,7 @@ export const Student=()=>{
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <FooterDR/>
         </div>
     )
 }

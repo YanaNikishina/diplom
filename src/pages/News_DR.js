@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from '../modules/news.module.css'
-import {Footer} from '../components/Footer'
 import {MenuDR} from '../components/MenuDR'
 import group from '../img/Group.svg'
 import Agreement from '../img/Agreement.svg'
+import { FooterDR } from '../components/FooterDR'
 
 export const NewsDR=()=>{
     
@@ -65,7 +65,7 @@ export const NewsDR=()=>{
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <FooterDR/>
         </div>
     )
 }

@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
 import styles from '../modules/zakaz.module.css'
-import {Footer} from '../components/Footer'
 import {MenuPU} from '../components/MenuPU'
 import del from '../img/Delete.svg'
+import { FooterPU } from '../components/FooterPU'
 
 export const Zakaz=()=>{
     const [answer1, setAnswer1] = useState(false)
@@ -109,7 +109,7 @@ export const Zakaz=()=>{
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <FooterPU/>
         </div>
     )
 }

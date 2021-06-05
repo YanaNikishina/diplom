@@ -3,12 +3,12 @@ import photo from '../img/photo.svg'
 import Avatar1 from '../img/Avatar1.svg'
 import Avatar2 from '../img/Avatar2.svg'
 import styles from '../modules/student.module.css'
-import {Footer} from '../components/Footer'
 import {MenuPU} from '../components/MenuPU'
 
 import {CircularProgressbar} from "react-circular-progressbar";
 import { buildStyles } from 'react-circular-progressbar'
 import "react-circular-progressbar/dist/styles.css";
+import { FooterPU } from '../components/FooterPU'
 
 
 export const Stud =() =>{
@@ -95,7 +95,7 @@ export const Stud =() =>{
 
                     </div>
                 </div>
-                <Footer/>
+                <FooterPU/>
             </div>
         </div>
     )

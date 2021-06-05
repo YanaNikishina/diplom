@@ -6,7 +6,7 @@ import youtube from '../img/youtube.svg'
 import inst from '../img/inst.svg'
 import {Link} from 'react-router-dom'
 
-export const Footer =()=>{
+export const FooterDR =()=>{
     return(
         <div className={styles.footer}>
            <header className={styles.header}>
@@ -32,7 +32,7 @@ export const Footer =()=>{
                                 Портал РКСИ
                             </p>
                             </a>
-                            <Link className={styles.link} to ={'/pages/News'}>
+                            <Link className={styles.link} to ={'/pages/News_DR'}>
                             <p className={styles.box2_li2}>
                                 Новости
                             </p>
@@ -40,24 +40,24 @@ export const Footer =()=>{
                         </div>
                         
                         <div className={styles.box2_blok2}>
-                        <Link className={styles.link} to ={'/pages/MyDiplom'}>
+                        <Link className={styles.link} to ={'/pages/Students'}>
                             <p className={styles.box2_li3}>
-                                Мой диплом 
+                                Студенты
                             </p>
                         </Link>
-                        <Link className={styles.link} to ={'/pages/Documents'}>
+                        <Link className={styles.link} to ={'/pages/DocumentsDR'}>
                             <p className={styles.box2_li4}>
                                 Документы
                             </p>
                         </Link>
                         </div>
                         <div className={styles.box2_blok3}>
-                        <Link className={styles.link} to ={'/pages/InstructStud'}>
+                        <Link className={styles.link} to ={'/pages/InstructDR'}>
                             <p className={styles.box2_li5}>
                                 Инструкции
                             </p>
                         </Link>
-                        <Link className={styles.link} to ={'/pages/fAQ'}>
+                        <Link className={styles.link} to ={'/pages/FAQ_DR'}>
                             <p className={styles.box2_li6}>
                                 FAQ
                             </p>
@@ -65,15 +65,9 @@ export const Footer =()=>{
                         </div>
                     </div>
                     <div className={styles.box3}>
-                        <a href='https://vk.com/pkcu_college'>
-                        <img className={styles.box3_href1}src={vk} alt="photo1"/>
-                        </a> 
-                        <a href='https://www.youtube.com/channel/UCCQx7F4dRY_LcsRrJcZYGDQ'>
+                        <img className={styles.box3_href1}src={vk} alt="photo1"/>  
                         <img className={styles.box3_href1}src={youtube} alt="photo2"/> 
-                        </a>
-                        <a href='https://www.instagram.com/rksi_ru/'>
-                        <img className={styles.box3_href1}src={inst} alt="photo3"/>
-                        </a>   
+                        <img className={styles.box3_href1}src={inst} alt="photo3"/>   
                     </div>
                 </div>
             </div>

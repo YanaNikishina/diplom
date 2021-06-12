@@ -231,9 +231,9 @@
 
 .term_text4, .term_text5{
     margin-top: 50px;
-    margin-left: 30px;
+    margin-left: 20px;
     margin-bottom: 0px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     color: #02014A;
 }
@@ -267,11 +267,17 @@
     width: 210px;
     font-family: "Gilroy", sans-serif;
 }
+.activ{
+    display: block;
+}
+.no_activ{
+    display:none;
+}
 
 
 
 
-@media (max-width:768px){
+@media screen and (max-width:768px){
     .conteiner{
         display: flex;
         flex-direction: column;
@@ -394,7 +400,7 @@
         height: 300px;
     }
 }
-@media (max-width:320px){
+@media screen and (max-width:320px){
     
     .body {
         font-family: "Gilroy", sans-serif;

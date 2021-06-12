@@ -14,7 +14,7 @@ export const ForgotPass =() =>{
         };
 
     const send3 =()=>{
-        console.log(form3)
+        console.log(JSON.stringify(form3));
         fetch('', 'POST',{...form3},null)
     }
 

@@ -10,6 +10,7 @@ import {CircularProgressbar} from "react-circular-progressbar";
 import { buildStyles } from 'react-circular-progressbar'
 import "react-circular-progressbar/dist/styles.css";
 import { FooterDR } from '../components/FooterDR'
+import {Timer} from '../components/Timer'
 
 export const DashboardDR =() =>{
     const percentage = 60;
@@ -90,23 +91,7 @@ export const DashboardDR =() =>{
                             </div>   
                         </div>
                         
-                        <div className={styles.term}>
-                            <p className={styles.term_text1}>Сроки выполнения дипломных работ</p>
-                            <div className={styles.box_term}>
-                                <div className={styles.box_term1}>
-                                    <p className={styles.term_text2}>До предзащиты проекта остлось</p>
-                                    <div className={styles.box_group1}>
-                                    <p className={styles.term_text4}>45 <span className={styles.sp_term_text4}>дней</span></p>
-                                    </div>    
-                                </div>
-                                <div className={styles.box_term2}> 
-                                    <p className={styles.term_text3}>До защиты проекта осталось</p>
-                                    <div className={styles.box_group1}>
-                                    <p className={styles.term_text5}>100 <span className={styles.sp_term_text5}>дней</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <Timer/>
                         
                     </div>
                 </div>

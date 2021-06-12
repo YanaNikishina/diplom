@@ -84,7 +84,7 @@
     justify-content: flex-end; 
 }
 
-@media (max-width:768px){
+@media (max-width:1024px){
     .footer{
         margin-top: 40px;
         font-family: "Gilroy", sans-serif;
@@ -134,7 +134,7 @@
 
 }
 
-@media (max-width:320px){
+@media (max-width:767px){
     .footer{
         margin-top: 40px;
         font-family: "Gilroy", sans-serif;
@@ -149,17 +149,18 @@
         flex-direction: column;
     }
     .header{
-
         padding-left: 30px;
         padding-top: 30px;
         width: auto;
     }
     .box1{
+        
         display: flex;
+        justify-content: center;
         flex-direction: column;
-        width: 200px;
+        width: 300px;
         padding-top: 30px;
-        padding-left: 90px;
+        padding-left: 30%;
     }
     .box1_text1{
         text-align: center;
@@ -177,6 +178,7 @@
         margin-left: 0px;
     }
     .box2{
+        justify-content: center;
         display: flex;
         text-align: left;
         margin-top: 20px;

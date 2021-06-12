@@ -55,6 +55,7 @@ export const Registr = () => {
 
             <div className={styles.big_conteiner}>
                 <div className={styles.conteiner_1}>
+                    
                     <div className ={styles.text}>
                         <p className ={styles.bigtext}>
                             Создай свой аккаунт!

@@ -341,7 +341,7 @@ margin-top: 10px;
     margin-top: 100px;
     margin-left: 100px;
 }
-@media (max-width:768px){
+@media screen and (max-width:1024px){
     .conteiner{
         text-align: left;
         margin-left: 80px;
@@ -593,10 +593,10 @@ margin-top: 10px;
     margin-top: 8px;
     }
 }
-@media (max-width:320px){
+@media screen and (max-width:767px){
     .conteiner{
         text-align: left;
-        margin-left: 20px;
+        margin-left: 60px;
         padding-top: 30px; 
         margin-right: 120px; 
     }

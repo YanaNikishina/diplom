@@ -225,7 +225,7 @@
     margin-left: 10px;
 
 }
-@media (max-width:768px){
+@media screen and (max-width:1024px){
     .text_hi{
         position: absolute;
         margin-top: 80px;
@@ -243,7 +243,7 @@
         min-height: 400px;
     }
     .circularProgressbar{
-        margin-left: -185px;
+        margin-left: -115px;
         margin-top: 80px;
         height: 150px;
         width: 150px;
@@ -251,6 +251,7 @@
     }
     .subject, .contacts{
         height: 120px;
+        width: 400px;
     }
     .contacts_photo2{
         width: 50px;
@@ -324,7 +325,7 @@
         margin-top: 5px;  
     }
 }
-@media (max-width:320px){
+@media screen and (max-width:767px){
     .text_hi{
         position: absolute;
         margin-top: 80px;
@@ -348,7 +349,7 @@
     }
     .subject, .contacts{
         height: 120px;
-        width: 280px;
+        width: 100%;
     }
     .contacts{
         margin-top: 20px;
@@ -359,7 +360,7 @@
         margin-left: 0px;
         border-radius: 16px;
         text-align: left;
-        width: 280px;
+        width: 100%;
         height: 300px;
         background-image: url('../img/Group_2.svg');
     }
@@ -369,11 +370,11 @@
         margin-top: 20px;
         border-radius: 16px;
         text-align: left;
-        width: 280px;
+        width: 100%;
         height: 300px;
     }
     .circularProgressbar{
-        margin-left: -155px;
+        margin-left: -115px;
         margin-top: 80px;
         height: 150px;
         width: 150px;

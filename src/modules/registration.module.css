@@ -309,6 +309,9 @@ font-weight: 100px;
 
 @media screen and (max-width:1024px){
 
+    .link{
+        text-decoration: none;
+    }
     .big_conteiner{
         display: flex;
         flex-wrap: wrap;
@@ -566,6 +569,9 @@ font-weight: 100px;
         margin-top: 5px;
         margin-left: 25px;
     
+    }
+    .link{
+        text-decoration: none;
     }
     
 }

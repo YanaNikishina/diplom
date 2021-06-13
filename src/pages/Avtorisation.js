@@ -44,6 +44,7 @@ export const Avtoris =() =>{
                                 Будь в курсе новостей! 
                             </p>
                         </div>
+                        <div className ={styles.text_quest}>
                         <p  className={styles.text_A}>
                             У вас еще нет аккаунт?
                         </p>
@@ -56,6 +57,7 @@ export const Avtoris =() =>{
                             <span className={styles.txakk2}>Регистрация</span>   
                         </button> 
                         </Link>
+                        </div>
                 </div>
 
                 <div  className={styles.conteiner_2} >

@@ -478,7 +478,7 @@
     justify-content: center;
     justify-items: center;
 }
-@media (max-width:768px){
+@media screen and (max-width:1024px){
     .conteiner{
         display: flex;
         flex-direction: column;
@@ -519,7 +519,7 @@
     }
     .active {
         display: block;
-        width: 500px;
+        width:700px;
         /* height: 100%; */
     }
     .no_active {
@@ -628,7 +628,7 @@
         background-color: #FFFFFF;
         border-radius: 16px;
         text-align: left;
-        width: 230px;
+        width: 340px;
         height: 140px;
         margin-bottom: 20px;
     }
@@ -641,7 +641,7 @@
     }
    
 }
-@media (max-width:320px){
+@media screen and (max-width:767px){
     .conteiner{
         display: flex;
         flex-direction: column;
@@ -665,10 +665,10 @@
         margin-top: 120px;
         margin-left: 40px;
         color: #02014A;
-        font-size: 15px;
+        font-size: 16px;
         font-weight:400;
         text-align: left;
-        width: 280px;
+        width: 290px;
         margin-bottom: 5px;
     }
     .text_2{
@@ -682,10 +682,11 @@
     }
     .active {
         display: block;
-        width: 290px;
+        width: 90%;
         /* height: 100%; */
     }
     .boxes1,.boxes2,.boxes_mark {
+        margin-left: 15px;
         display: flex;
         flex-wrap: wrap;
         width: 100%;

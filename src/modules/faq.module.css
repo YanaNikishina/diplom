@@ -174,7 +174,7 @@
     margin-left: 10px;
 }
 
-@media (max-width:768px){
+@media screen and (max-width:1024px){
     .conteiner{
         display: flex;
         margin-top: 180px;
@@ -199,13 +199,18 @@
         width: 400px;
     
     }
+    .quest{
+        width: 90%;
+        margin-right: 20px;
+    }
     .dip_box2{
         background-color: #FFFFFF;
         height: auto;
-        width: 400px;
+        width: 100%;
         border-radius: 16px;
         padding-bottom: 10px;
         margin-bottom: 20px;
+        
     }
     .categor{
         width: 100px;
@@ -260,22 +265,22 @@
     }
     .red{
         margin-top: 15px;
-        margin-left: 100px;
+        margin-left: 370px;
         width: 24px;
         height: 24px;   
     }
 }
-@media (max-width:320px){
+@media screen and (max-width:767px){
     .conteiner{
         display: flex;
         flex-direction: column;
-        margin-top: 180px;
+        margin-top: 200px;
         margin-left: 20px;
     }
     .text_hi{
         position: absolute;
         margin-top: 80px;
-        margin-left: 90px;
+        margin-left: 120px;
         color: #02014A;
         font-size: 22px;
         font-weight:bold;
@@ -287,13 +292,14 @@
     .text{
         text-align: left;
         margin-top: 120px;
-        margin-left: 50px;
+        margin-left: 90px;
         color: #02014A;
-        font-size: 12px;
-        width: 250px;
+        font-size: 14px;
+        width: 270px;
     }
     .quest{
         order: 2;
+        width: 100%;
         margin-top: 20px;
     }
     .categor{
@@ -363,7 +369,7 @@
     }
     .red{
         margin-top: 15px;
-        margin-left: 20px;
+        margin-left: 90px;
         width: 22px;
         height: 22px;   
     }

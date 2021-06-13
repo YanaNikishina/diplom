@@ -312,7 +312,7 @@
     text-decoration: none;
 }
 
-@media (max-width:768px){
+@media screen and (max-width:1024px){
     .text_hi{
         position: absolute;
         margin-top: 80px;
@@ -378,7 +378,7 @@
     }
     
 }
-@media (max-width:320px){
+@media screen and (max-width:767px){
     .text_hi{
         position: absolute;
         margin-top: 80px;

@@ -70,7 +70,7 @@ export const Dip =() =>{
                         <div className={styles.box02}>
                         <p className={styles.dip_text2}>2021</p>
                         <ul className={styles.studs}>
-                            <Link className={styles.link} to ={'/pages/Student1'}>
+                            <Link className={styles.link} to ={'/pages/StudentUP'}>
                                 <li className={styles.stud}> Никишина Я.Е.</li>
                             </Link>
                             <li className={styles.stud}> Мамин Д.И.</li>

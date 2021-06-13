@@ -307,7 +307,7 @@
 .link{
     text-decoration: none;
 }
-@media (max-width:768px){
+@media screen and (max-width:1024px){
     .text_hi{
         position: absolute;
         margin-top: 80px;
@@ -425,7 +425,7 @@
     }
     
 }
-@media (max-width:320px){
+@media screen and (max-width:767px){
     .box01,.boxe01{
         display: flex;
         margin-left: 0px;

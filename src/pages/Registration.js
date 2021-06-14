@@ -78,7 +78,7 @@ export const Registr = () => {
         console.log("Form: ", JSON.stringify(currentData)); 
  
         // Тут наш запрос 
-        fetch(`http://poks42.ml/api/user/registration`, { 
+        fetch(`https://poks42.ml/api/user/registration`, { 
             method: 'POST', 
             headers: { 
               'Content-Type': 'application/json;charset=utf-8' 

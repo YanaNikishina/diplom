@@ -6,47 +6,106 @@ import styles from '../modules/registration.module.css'
 import { Formik, Field, Form } from "formik";
 export const Registr = () => {
 
-    const [cat, setCat] = useState(false)
+    const [cat, setCat] = useState(true)
 
-    // const[form1, setForm1] =useState({
-    //     fio: '',
-    //     group: '',
-    //     numb: '',
-    //     maill: '',
-    //     pas: '',
-    //     сheck: 'false'
-    // })
+    const initialValues = {  
+        name: "", 
+        group: "", 
+        company:"", 
+        position:"", 
+        tell: "", 
+        email: "" 
+        ,pass: ""  
+    };
 
-    // const changeInputHandler1 = (event) => {
-    //     setForm1({...form1, [event.target.name]: event.target.value})
-    //     };
+    const[form1, setForm1] =useState({
+        fio: '',
+        group: '',
+        numb: '',
+        maill: '',
+        pas: '',
+        сheck: 'false'
+    })
 
-    // const send1 =()=>{
-    //             console.log(form1)
-    //             fetch('', 'POST',{...form1},null)
-    //             } 
+    const changeInputHandler1 = (event) => {
+        setForm1({...form1, [event.target.name]: event.target.value})
+        };
+
+    const send1 =()=>{
+                console.log(form1)
+                fetch('', 'POST',{...form1},null)
+                } 
        
 
 
-    // const[form2, setForm2] =useState({
-    //     fio: '',
-    //     company: '',
-    //     position: '',
-    //     number: '',
-    //     mail: '',
-    //     pass: ''
+    const[form2, setForm2] =useState({
+        fio: '',
+        company: '',
+        position: '',
+        number: '',
+        mail: '',
+        pass: ''
 
-    // })
+    })
 
-    // const changeInputHandler2 = (event) => {
-    //     setForm2({...form2, [event.target.name]: event.target.value})
-    //     };
+    const changeInputHandler2 = (event) => {
+        setForm2({...form2, [event.target.name]: event.target.value})
+        };
 
-    // const send2 =()=>{
-    //     console.log(form2)
-    //     fetch('', 'POST',{...form2},null)
-    // }
+    const send2 =()=>{
+        console.log(form2)
+        fetch('', 'POST',{...form2},null)
+    }
 
+    
+    
+    const handleSubmit = (data) => { 
+        // Здесь мы будем отправлять конкретно данные из активной формы 
+        const currentData = { 
+            mode: "raw", 
+            raw: { 
+                policy: true, 
+                role: cat ? "STUD" : "DIP.RUC", 
+                ...data 
+            }, 
+            options: { 
+                raw: { 
+                    "language": "json" 
+                } 
+            } 
+        } 
+ 
+        console.log("Form: ", JSON.stringify(currentData)); 
+ 
+        // Тут наш запрос 
+        fetch(`http://poks42.ml/api/user/registration`, { 
+            method: 'POST', 
+            headers: { 
+              'Content-Type': 'application/json;charset=utf-8' 
+            }, 
+            body: JSON.stringify(currentData) 
+          }) 
+        // Получаем ответ и парсим его в json 
+            .then(resp => resp.json()) 
+        // Здесь, если нужно, мы производим какие-то манипуляции с ответом, либо просто 
+        // действия, типа "Регистрация прошла успешно!" 
+            .then(resp => { 
+                console.log("Answer from server: ", resp); 
+            }) 
+        // Если что-то пошло не так, ловим ошибку тут и выводим ее в консоль 
+            .catch(error => { 
+                console.log(error); 
+            }); 
+    }
+    const handleChangeInput = event => {
+        const currentData = cat? form1 : form2;
+        
+        setForm1({...currentData, [event.target.name]: event.target.value})
+    };
+
+
+
+    
     return(
         <div className ={styles.body}>
             <header className={styles.header}>
@@ -96,84 +155,48 @@ export const Registr = () => {
                             <p className={styles.sotr}>Сотрудник</p>
                         </div>
                     </div>
-                    <div className={ cat ? `${styles.chec_1} ${styles.no_active}` : `${styles.chec_1} ${styles.active}`}> 
                         
                     <Formik
-                        initialValues={{ name: "",group: "",tell: "",email: "",pass: "" }}
-                        onSubmit={async values => {
-                        await new Promise(resolve => setTimeout(resolve, 500));
-                        console.log(JSON.stringify(values, null, 2));
-                        }}
+                        initialValues={initialValues}
+                        onSubmit={handleSubmit}        
                     >
                         <Form className={styles.form}>
-                            <Field   className={styles.input_fio} placeholder=" ФИО" name="name" type="text" />    
-                            <select name="group" className={styles.group}>
-                            <option className={styles.group_option} defaultValue disabled>Выберите группу</option>
-                            <option>ПОКС-41</option>
-                            <option>ПОКС-42</option>
-                            <option>ПОКС-43</option>
-                            <option>ПОКС-44</option>
-                        </select>
+                            <Field   className={styles.input_fio} placeholder=" ФИО" name="name" type="text"
+                            // onChange={changeInputHandler} value={form3.email}
+                             />    
+                            {cat ? ( 
+                                    <> 
+                                        <select name="group" className={styles.group}> 
+                                        <option className={styles.group_option} defaultValue disabled>Выберите группу</option> 
+                                        <option>ПОКС-41</option> 
+                                        <option>ПОКС-42</option> 
+                                        <option>ПОКС-43</option> 
+                                        <option>ПОКС-44</option> 
+                                    </select> 
+                                    </> 
+                                ) : (
+                                    <> 
+                                    <Field className={styles.input_company} placeholder=" Компания" type="text" name="company"/> 
+                                    <Field className={styles.input_position} placeholder=" Должность" type="text" name="position"/> 
+                                    </>
+                                    
+                                )}
                             <Field   className={styles.input_mail} placeholder=" Тел." name="tell" type="phone" />
                             <Field   className={styles.input_mail} placeholder=" E-mail" name="email" type="email" />
-                            <Field    className={styles.input_pass} placeholder=" Пароль" name="pass" type="text" />
+                            <Field   className={styles.input_pass} placeholder=" Пароль" name="pass" type="text" />
+                            
+                            <div className={styles.check_box}>
+                            <input type="checkbox"  className={styles.custom_checkbox} id="check" name="check" defaultChecked required/>
+                            <label htmlFor="check"><p className={styles.text_chex}> Я согласен с <span className={styles.text_a}>Политикой обработки персональных даных.</span></p></label>
+                            </div>
+                            
+                            <button  type ="submit"
+                                onSubmit={handleSubmit} 
+                                className={styles.btn}><span className={styles.txakk}>Создать аккаунт</span>
+                            </button> 
                         </Form>
+                    
                     </Formik>
-                        
-                        
-                        
-                        {/* <input type="text" name="fio" 
-                        // onChange={changeInputHandler1} value={form1.name} 
-                        className={`${styles.input} ${styles.input_fio}`} placeholder=" ФИО"/>
-                        <select name="group" 
-                        // onChange={changeInputHandler1} value={form1.group} 
-                        className={styles.group}>
-                            <option className={styles.group_option} defaultValue disabled>Выберите группу</option>
-                            <option>ПОКС-41</option>
-                            <option>ПОКС-42</option>
-                            <option>ПОКС-43</option>
-                            <option>ПОКС-44</option>
-                        </select>
-                        <input type="text" name="numb" 
-                        // onChange={changeInputHandler1} value={form1.numb}
-                         className={`${styles.input} ${styles.input_numb}`} placeholder=" +7"/>
-                        <input type="text" name="maill"
-                        //  onChange={changeInputHandler1} value={form1.maill} 
-                         className={`${styles.input} ${styles.input_maill}`} placeholder=" E-mail"/>
-                        <input type="text" name="pas"
-                        //  onChange={changeInputHandler1} value={form1.pas}
-                          className={`${styles.input} ${styles.input_pas}`} placeholder=" Пароль"/> */}
-                    </div>
-
-                    <div className={ cat ? `${styles.chec_2} ${styles.active}` : `${styles.chec_2} ${styles.no_active}`} >
-                        <input type="text" name="fio"
-                        //  onChange={changeInputHandler2} value={form2.name} 
-                         className={`${styles.input} ${styles.input_fio}`} placeholder=" ФИО"/>
-                        <input type="text" name="company" 
-                        // onChange={changeInputHandler2} value={form2.company} 
-                        className={`${styles.input} ${styles.input_company}`} placeholder=" Компания"/>
-                        <input type="text" name="position" 
-                        // onChange={changeInputHandler2} value={form2.position}
-                        className={`${styles.input} ${styles.input_position}`} placeholder=" Должность"/>
-                        <input type="text" name="number" 
-                        // onChange={changeInputHandler2} value={form2.number} 
-                        className={`${styles.input} ${styles.input_number}`} placeholder=" +7"/>
-                        <input type="text" name="mail" 
-                        // onChange={changeInputHandler2} value={form2.mail}
-                         className={`${styles.input} ${styles.input_mail}`} placeholder=" E-mail"/>
-                        <input type="text" name="pass"
-                        //  onChange={changeInputHandler2} value={form2.pass} 
-                         className={`${styles.input} ${styles.input_pass}`} placeholder=" Пароль"/>
-                    </div>
-                    <div className={styles.check_box}>
-                        <input type="checkbox"  className={styles.custom_checkbox} id="check" name="check" defaultChecked/>
-                        <label htmlFor="check"><p className={styles.text_chex}> Я согласен с <span className={styles.text_a}>Политикой обработки персональных даных.</span></p></label>
-                    </div>
-                    <Link className={styles.link} to ={'/pages/Dashboard'}>
-                    <button  type ="button"
-                    //  onClick={ (cat && send2) || (send1)} 
-                      className={styles.btn}><span className={styles.txakk}>Создать аккаунт</span></button> 
-                    </Link>
                 </div>
             </div>
         </div>

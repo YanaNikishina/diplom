@@ -18,44 +18,44 @@ export const Registr = () => {
         ,pass: ""  
     };
 
-    const[form1, setForm1] =useState({
-        fio: '',
-        group: '',
-        numb: '',
-        maill: '',
-        pas: '',
-        сheck: 'false'
-    })
+    // const[form1, setForm1] =useState({
+    //     fio: '',
+    //     group: '',
+    //     numb: '',
+    //     maill: '',
+    //     pas: '',
+    //     сheck: 'false'
+    // })
 
-    const changeInputHandler1 = (event) => {
-        setForm1({...form1, [event.target.name]: event.target.value})
-        };
+    // const changeInputHandler1 = (event) => {
+    //     setForm1({...form1, [event.target.name]: event.target.value})
+    //     };
 
-    const send1 =()=>{
-                console.log(form1)
-                fetch('', 'POST',{...form1},null)
-                } 
+    // const send1 =()=>{
+    //             console.log(form1)
+    //             fetch('', 'POST',{...form1},null)
+    //             } 
        
 
 
-    const[form2, setForm2] =useState({
-        fio: '',
-        company: '',
-        position: '',
-        number: '',
-        mail: '',
-        pass: ''
+    // const[form2, setForm2] =useState({
+    //     fio: '',
+    //     company: '',
+    //     position: '',
+    //     number: '',
+    //     mail: '',
+    //     pass: ''
 
-    })
+    // })
 
-    const changeInputHandler2 = (event) => {
-        setForm2({...form2, [event.target.name]: event.target.value})
-        };
+    // const changeInputHandler2 = (event) => {
+    //     setForm2({...form2, [event.target.name]: event.target.value})
+    //     };
 
-    const send2 =()=>{
-        console.log(form2)
-        fetch('', 'POST',{...form2},null)
-    }
+    // const send2 =()=>{
+    //     console.log(form2)
+    //     fetch('', 'POST',{...form2},null)
+    // }
 
     
     
@@ -96,11 +96,11 @@ export const Registr = () => {
                 console.log(error); 
             }); 
     }
-    const handleChangeInput = event => {
-        const currentData = cat? form1 : form2;
+    // const handleChangeInput = event => {
+    //     const currentData = cat? form1 : form2;
         
-        setForm1({...currentData, [event.target.name]: event.target.value})
-    };
+    //     setForm1({...currentData, [event.target.name]: event.target.value})
+    // };
 
 
 

@@ -81,7 +81,7 @@ export const Registr = () => {
         fetch(`https://poks42.ml/api/user/registration`, { 
             method: 'POST', 
             headers: { 
-              'Content-Type': 'application/json;charset=utf-8' 
+            //   'Content-Type': 'application/json;charset=utf-8' 
             }, 
             body: JSON.stringify(currentData) 
           }) 

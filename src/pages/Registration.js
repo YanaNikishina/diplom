@@ -76,9 +76,10 @@ export const Registr = () => {
         } 
  
         console.log("Form: ", JSON.stringify(currentData)); 
+        console.log("HERE", process.env)
  
         // Тут наш запрос 
-        fetch(`https://poks42.ml`, { 
+        fetch(`https://localhost:5000/api/user/registration`, { 
             method: 'POST', 
             headers: {  
             }, 

@@ -177,7 +177,7 @@ h1{
 .form{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: left;
 }
 
 .input_fio {
@@ -197,9 +197,7 @@ h1{
 .group_option{
     opacity: 0.5;
     border-radius: 8px;
-    
     border: 1px solid rgb(118, 118, 118);
-
 }
 
 .input_company, .input_position,.input_number, .input_mail, .input_pass,.input_numb, .input_maill, .input_pas, .group {

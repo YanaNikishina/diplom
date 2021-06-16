@@ -38,6 +38,7 @@
     margin-top: 140px;
     margin-left: 360px;
     margin-right: 20px;
+    min-height: 800px;
 }
 .dip_h2{
     text-align: left;
@@ -88,6 +89,7 @@
     height: 30px;
 }
 .dip_text{
+    width: 140px;
     margin-top: 15px;
     text-align: left;
     margin-left: 40px;
@@ -172,6 +174,47 @@
     margin-left: 120px;
     width: 24px;
     height: 24px;
+}
+.input{
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 250px;
+    height: 35px;
+    opacity: 0.5;
+    border-radius: 8px;
+    border: 1px solid rgb(118, 118, 118);
+}
+
+.btn{
+    display: flex;
+    cursor: pointer;
+    font-family:  "Gilroy", sans-serif ;
+    margin-top: 12px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    height: 30px;
+    color: #FFFFFF;
+    background-color:#6E17F2 ;
+    outline: none;
+    
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+.txakk{
+    
+    font-size: 14px;
+    font-weight:200px;
+    margin-top: 5px;
+    margin-left: 10px;
+
+}
+.newdoc{
+    display: flex;
+    justify-content: center;
 }
 
 

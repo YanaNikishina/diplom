@@ -19,7 +19,7 @@ export const FAQPU=()=>{
             <MenuPU className={styles.menu}></MenuPU>
             <div className={styles.big_conteiner}>
                 <p className={styles.text_hi}>Вопрос ответ</p>
-                <p className={styles.text}>Здесь собраны самые частозадаваемые вопросы. Весь список вопросов можно найти в нашей группе ВКонтакте - <span className={styles.spantext}>“ПОКС Диплом”</span>.</p>
+                <p className={styles.text}>Здесь собраны самые частозадаваемые вопросы. Весь список вопросов можно найти в нашей группе ВКонтакте - <a href="https://vk.com/rksi_poks_diplom" className={styles.spantext}>“ПОКС Диплом”</a>.</p>
                 
                 <div className={styles.conteiner}>
                     <div className={styles.quest}>

@@ -225,6 +225,15 @@
     font-size: 16px;
     color: #02014A;   
 }
+.boxflex{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.del{
+    margin-top: 20px;
+    margin-right: 20px;
+}
 @media screen and (max-width:1024px){
     .text_hi{
         position: absolute;

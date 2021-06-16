@@ -2,6 +2,8 @@ import React from 'react'
 import styles from '../modules/news.module.css'
 import {MenuPU} from '../components/MenuPU'
 import group from '../img/Group.svg'
+import del from '../img/Delete.svg'
+import redact from '../img/Redact.svg'
 import Agreement from '../img/Agreement.svg'
 import { FooterPU } from '../components/FooterPU'
 
@@ -51,7 +53,13 @@ export const NewsPU=()=>{
                         </div>
                         
                         <div className={styles.dip_box1}> 
-                            <p className={styles.text1}>Новости портала</p>
+                            <div className={styles.boxflex}>
+                                <p className={styles.text1}>Новости портала</p>
+                                <div>
+                                <img className={styles.del} src ={redact} alt="Photos"/>
+                                <img className={styles.del} src ={del} alt="Photos"/>
+                                </div>
+                            </div>
                             <div className={styles.news}>
                             <p className={styles.new_text}>Текст статьи текст статьи текст статьи  текст статьи текст статьи текст статьи текст статьи текст тсатьи текст статьи текст статьи текст статьи текст статьи текст тсатьи текст статьи текст статьи текст статьи текст статьи текст тсатьи текст статьи текст статьи текст статьи текст статьи текст тсатьи текст статьи текст статьи текст статьи текст статьи текст тсатьи текст статьи текст статьи текст статьи текст статьи текст тсатьи текст статьи текст статьи текст статьи текст статьи<br/> текст тсатьи
 

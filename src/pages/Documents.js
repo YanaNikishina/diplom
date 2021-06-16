@@ -22,38 +22,40 @@ export const Documents=()=>{
                     <div className={styles.dip_box2}>
                         <p className={styles.dip_text1}>Ниже представлены шаблоны всех документах, которые потребуются при написании дипломной работы.</p>
                         <div className={styles.doc}>
-                            <div className={styles.icon}>
+                            <a href="https://docs.google.com/document/d/1v7F066zIYXqUDmIsffxLtMydCxYe52gw/edit" className={styles.icon}>
                                 <img className={styles.icon_photo} src ={paper} alt="Photos"/>
-                                <p className={styles.dip_text}>Титульный лист.pdf</p>
-                            </div>
-                            <div className={styles.icon}>
+                                <p className={styles.dip_text}>Титульный лист</p>
+                            </a>
+                            <a href="https://docs.google.com/document/d/17E5l4z2g7Q0XK_lhgcNrmpbx_-zFkgg8/edit?rtpof=true" className={styles.icon}>
                                 <img className={styles.icon_photo} src ={paper} alt="Photos"/>
-                                <p className={styles.dip_text}>Титульный лист.pdf</p>
-                            </div>
-                            <div className={styles.icon}>
+                                <p  className={styles.dip_text}>Задание</p>
+                            </a>
+                            <a href="https://docs.google.com/document/d/1v7F066zIYXqUDmIsffxLtMydCxYe52gw/edit" className={styles.icon}>
                                 <img className={styles.icon_photo} src ={paper} alt="Photos"/>
-                                <p className={styles.dip_text}>Титульный лист.pdf</p>
-                            </div>
-                            <div className={styles.icon}>
+                                <p className={styles.dip_text}>Титульный лист</p>
+                            </a>
+                            <a href="https://docs.google.com/document/d/1toZRxVOgommfQVm6wg6Y2ZZTp9qM0Ym2/edit?rtpof=true" className={styles.icon}>
                                 <img className={styles.icon_photo} src ={paper} alt="Photos"/>
-                                <p className={styles.dip_text}>Титульный лист.pdf</p>
-                            </div>
-                            <div className={styles.icon}>
+                                <p className={styles.dip_text}>Отзыв</p>
+                            </a>
+                            <a href="https://docs.google.com/document/d/1RKKCafojLYAyUPEGPWTlvSsbSotw7B8q/edit?rtpof=true" className={styles.icon}>
                                 <img className={styles.icon_photo} src ={paper} alt="Photos"/>
-                                <p className={styles.dip_text}>Титульный лист.pdf</p>
-                            </div>
-                            <div className={styles.icon}>
+                                <p className={styles.dip_text}>Рецензия</p>
+                            </a>
+                            <a href="https://docs.google.com/document/d/1etRED_J-7gHvjaIT60h36-b1Naihz9_D/edit?rtpof=true" className={styles.icon}>
                                 <img className={styles.icon_photo} src ={paper} alt="Photos"/>
-                                <p className={styles.dip_text}>Титульный лист.pdf</p>
-                            </div>
-                            <div className={styles.icon}>
+                                <p className={styles.dip_text}>Содержание</p>
+                            </a>
+                            <a href="https://docs.google.com/document/d/1L2g5ES37KKt7xHr3VfCMMIEOKbQE6R0V/edit" className={styles.icon}>
                                 <img className={styles.icon_photo} src ={paper} alt="Photos"/>
-                                <p className={styles.dip_text}>Титульный лист.pdf</p>
-                            </div>
-                            <div className={styles.icon}>
+                                <p className={styles.dip_text}>Справка </p>
+                            </a>
+                            <a href="https://docs.google.com/document/d/1v7F066zIYXqUDmIsffxLtMydCxYe52gw/edit" className={styles.icon}>
                                 <img className={styles.icon_photo} src ={paper} alt="Photos"/>
-                                <p className={styles.dip_text}>Титульный лист.pdf</p>
-                            </div>
+                                <p className={styles.dip_text}>Титульный лист</p>
+                            </a>
+
+                            
                         </div>
                     </div>
                     <div className={styles.subject}>

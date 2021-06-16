@@ -16,6 +16,7 @@ export const Timer =() =>{
             var daysNum = ['день','дня','дней'];
             
             let dayNum = daysNum[1 === days % 10 && 11 !== days % 100 ? 0 : 2 <= days % 10 && 4 >= days % 10 && (10 > days % 100 || 20 <= days % 100) ? 1 : 2]
+            try{
             if  (days < 0) {
                 document.getElementById("timer").innerHTML = "0 дней";
               } else {
@@ -28,7 +29,11 @@ export const Timer =() =>{
             else {
             clearInterval(x);
             document.body.querySelector(".timer");
-            } 
+            } }
+
+            catch{
+                console.log("!!!!!!!!!!!!!!!")
+            }
             
     }, 1000);
 

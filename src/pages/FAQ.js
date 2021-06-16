@@ -17,7 +17,7 @@ export const FAQ=()=>{
             <Menu className={styles.menu}></Menu>
             <div className={styles.big_conteiner}>
                 <p className={styles.text_hi}>Вопрос ответ</p>
-                <p className={styles.text}>Если у тебя есть вопросы по написанию дипломной работы, ты можешь задать их в нашей группе ВКонтакте - <span className={styles.spantext}>“ПОКС Диплом”</span>.</p>
+                <p className={styles.text}>Если у тебя есть вопросы по написанию дипломной работы, ты можешь задать их в нашей группе ВКонтакте - <a href="https://vk.com/rksi_poks_diplom" className={styles.spantext}>“ПОКС Диплом”</a>.</p>
                 
                 <div className={styles.conteiner}>
                     <div className={styles.quest}>

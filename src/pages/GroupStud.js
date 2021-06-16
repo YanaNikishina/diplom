@@ -118,7 +118,7 @@ export const GroupStud =() =>{
                                     </div>
                                 </div>
                                 <div className={styles.form}>
-                                    <p className={styles.text_box1}>Форма редакции важного уведомления</p>
+                                    <p className={styles.text_box1}>Форма создания группы.</p>
                                     <p className={styles.term_text}>Введите данные для создания группы!</p>
                                     <input name="name" className={`${styles.input} ${styles.input_text}`} placeholder=" Название группы"/>
                                     <input name="ruc" className={`${styles.input} ${styles.input_text}`} placeholder=" Классный руководитель"/>

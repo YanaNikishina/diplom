@@ -79,7 +79,7 @@ export const Registr = () => {
         console.log("HERE", process.env)
  
         // Тут наш запрос 
-        fetch(`https://localhost:5000/api/user/registration`, { 
+        fetch(`localhost:5000/api/user/registration`, { 
             method: 'POST', 
             headers: {  
             }, 

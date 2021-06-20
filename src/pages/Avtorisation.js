@@ -1,33 +1,30 @@
-import React  from 'react'
+import React,{ useState } from 'react'
+import { useHistory } from "react-router-dom";
 import {Link} from 'react-router-dom'
 import logo from '../img/logo.svg'
 import styles from '../modules/avtoris.module.css'
-import { Formik, Field, Form } from "formik";
+import {getProfile, login} from '../model'
+import { Formik, Field, Form, ErrorMessage } from "formik";
+import * as Yup from 'yup';
 
 
-export const Avtoris =() =>{
-    
-    // const[form, setForm] =useState({
-    //     mail: '',
-    //     pass: ''
+export const Avtorisation =() =>{
 
-    // })
+    const history = useHistory();
+    const [errMsg, setErrMsg]= useState();
 
-    // const changeInputHandler = (event) => {
-    //     setForm({...form, [event.target.name]: event.target.value})
-    //     };
-
-    // const send =()=>{
-    //     console.log(form)
-    //     fetch('', 'POST',{...form},null)
-    // }
+    const handleSubmit = (data) => { 
+        login(data).then(msg =>{
+            history.push("/")
+        })
+        .catch(err =>{
+            setErrMsg(err.response.data.message);
+        })
+    }
+    getProfile().then(console.log)
     return(
 
-
-        
-       
         <div className={styles.body}>
-
 
                 <header className={styles.header}>
                     <img src={logo} alt="Logo"/>
@@ -65,16 +62,26 @@ export const Avtoris =() =>{
                     <p  className={styles.text_vvod}> Введите ваши данные для входа в аккаунт.</p>
 
                     <Formik
-                        initialValues={{ email: "",pass: "" }}
-                        onSubmit={async values => {
-                        await new Promise(resolve => setTimeout(resolve, 500));
-                        console.log(JSON.stringify(values, null, 2));
+                        initialValues={{  
+                            email: 'yan@gmail.com',
+                            password: '12345678',
                         }}
+                        validationSchema={
+                            Yup.object().shape({
+                            email: Yup.string().email('Invalid email').required("Отязательно"),
+                            password: Yup.string().required("Отязательно").min(8).max(15),
+                        })}
+                        onSubmit={handleSubmit}  
                     >
-                        <Form className={styles.form}>
+                        <Form 
+                        onChange={()=>setErrMsg(null)}
+                        className={styles.form}>
                             <Field   className={styles.input_mail} placeholder=" E-mail" name="email" type="email" />
-                            <Field    className={styles.input_pass} placeholder=" Пароль" name="pass" type="text" />
+                            <ErrorMessage name="email" /> 
+                            <Field className={styles.input_pass} placeholder="Пароль" name="password"/>
+                            <ErrorMessage name="password" />
                             <Link to ={'/pages/ForgotPass'} className={styles.forgot_pass}>Забыли пароль?</Link>
+                            {errMsg && <span> {errMsg} </span>}
                             <button    className={styles.btn} type="submit"><span className={styles.txakk}>Войти</span>  </button>
                         </Form>
                     </Formik>

@@ -1,23 +1,20 @@
-import React, { useState }  from 'react'
+import React from 'react'
 import {Link} from 'react-router-dom'
 import logo from '../img/logo.svg'
 import styles from '../modules/forgotPass.module.css'
+import { Formik, Field, Form, ErrorMessage } from "formik";
+import * as Yup from 'yup';
+import{forgotpass} from '../model'
 
 export const ForgotPass =() =>{
-    const[form3, setForm3] =useState({
-        gmaill: ''
-
-    })
-
-    const changeInputHandler = (event) => {
-        setForm3({...form3, [event.target.name]: event.target.value})
-        };
-
-    const send3 =()=>{
-        console.log(JSON.stringify(form3));
-        fetch('', 'POST',{...form3},null)
+    const handleSubmit = (data) => { 
+        forgotpass(data).then(msg =>{
+            alert(msg)
+        })
+        .catch(err =>{
+            alert( err.response.data.errors[0].msg)
+        })
     }
-
     return(
         <div className={styles.body}>
             <header className={styles.header}>
@@ -33,20 +30,28 @@ export const ForgotPass =() =>{
                     </div>
                 </div>
 
-                <form className ={styles.conteiner_2}>
+                <div className ={styles.conteiner_2}>
                     <h1 className ={styles.h1}>Забыли пароль? </h1>
-                        <p className ={styles.text_vvod}> На вашу электронну почту придет новый пароль.</p>
-                        <p className ={styles.text_vvod2}> После получения письма перейдите на страницу<Link to={'/pages/Avtorisation'} className ={styles.avtoriz}> Авторизации</Link> и используйте новый пароль.</p>
-                        <input type="text" name="gmaill" 
-                        onChange={changeInputHandler} value={form3.email} 
-                        className={`${styles.input} ${styles.input_mail}`} placeholder=" E-mail"/>
-                        <Link className={styles.link} to ={'/pages/Dashboard'}>
-                        <button  onClick={send3}  className ={styles.btn}><span className ={styles.txakk}>Сменить пароль</span></button> 
-                        </Link>
-                    </form> 
-
+                    <p className ={styles.text_vvod}> На вашу электронну почту придет новый пароль.</p>
+                    <p className ={styles.text_vvod2}> После получения письма перейдите на страницу<Link to={'/pages/Avtorisation'} className ={styles.avtoriz}> Авторизации</Link> и используйте новый пароль.</p>
+                    <Formik
+                    initialValues={{  
+                        email: 'yan@gmail.com',
+                    }}
+                    validationSchema={
+                        Yup.object().shape({
+                        email: Yup.string().email('Invalid email').required("Отязательно"),
+                    })}
+                    onSubmit={handleSubmit}  
+                    >
+                        <Form className={styles.form}>
+                        <Field className={styles.input_mail} placeholder=" E-mail" name="email" type="email" />
+                        <ErrorMessage name="email" /> 
+                        <button type="submit" className ={styles.btn}><span className ={styles.txakk}>Сменить пароль</span></button> 
+                        </Form>
+                    </Formik>
+                </div> 
             </div>
         </div>
     )
-
 }

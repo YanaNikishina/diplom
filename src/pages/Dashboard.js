@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import photo from '../img/photo.svg'
 import photo_news from '../img/photo_news.svg'
 import Arrow_Right from '../img/Arrow - Right.svg'
@@ -12,10 +12,12 @@ import { buildStyles } from 'react-circular-progressbar'
 import "react-circular-progressbar/dist/styles.css";
 import { Card } from '../components/Card'
 import {Timer} from '../components/Timer'
+import { ProfileContext } from '../components/ProfileWrapper'
 
 export const Dashboard =() =>{
     const percentage = 44;
-    
+    const profile = useContext(ProfileContext)
+    console.log(profile)
     return(
         <div className={styles.body}>
             
@@ -24,7 +26,7 @@ export const Dashboard =() =>{
             </div>
             <Menu className={styles.menu}></Menu>
             <div className={styles.big_conteiner}>
-                <p className={styles.text_hi}>Привет, Яна!</p>
+                <p className={styles.text_hi}>Привет, {profile.name}!</p>
 
                 <div className={styles.conteiner}>
                     <div className={styles.box_1}>
@@ -38,8 +40,8 @@ export const Dashboard =() =>{
                             <div>
                                 <p className={styles.contacts_text1}>Контакты</p>
                                 
-                                <p className={styles.contacts_text2}>Тел.: <span className={styles.sp_cont_t1}> 8 928 768 32 37</span></p>
-                                <p className={styles.contacts_text3}>Email: <span className={styles.sp_cont_t2}> ktoto@gmail.com</span></p>
+                                <p className={styles.contacts_text2}>Тел.: <span className={styles.sp_cont_t1}> {profile.phone}</span></p>
+                                <p className={styles.contacts_text3}>Email: <span className={styles.sp_cont_t2}> {profile.email}</span></p>
                             
                             </div>
                             <img className={styles.contacts_photo} src ={photo} alt="Photos"/>

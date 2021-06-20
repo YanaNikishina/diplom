@@ -22,7 +22,19 @@ import phot from '../img/Rectangle.svg'
 
 import {FooterLP} from '../components/FooterLP'
 
+import { Formik, Field, Form, ErrorMessage } from "formik";
+import * as Yup from 'yup';
+import { order } from '../model'
+
 export const LandPag=()=>{
+    const handleSubmit = (data) => { 
+        order(data).then(msg =>{
+            alert(msg)
+        })
+        .catch(err =>{
+            alert( err.response.data.errors[0].msg)
+        })
+    }
     return(
         <div className={styles.body}>
              <header className={styles.header} >
@@ -109,13 +121,13 @@ export const LandPag=()=>{
                     <div className={styles.step3}>
                         <img className={styles.icon_3} src={li3}alt="Фото 3"/>
                         <p className={styles.ts_3}>
-                        После этого  колледж подбирает команду студентов.
+                            После этого  колледж подбирает команду студентов.
                         </p>
                     </div>
                     <div className={styles.step4}>
                     <img className={styles.icon_4} src={li4}alt="Фото 4"/>
                     <p className={styles.ts_4}>
-                    Команда  так же связывается с заказчиком и проводит интервью.
+                        Команда  так же связывается с заказчиком и проводит интервью.
                     </p>
                 </div>
                 </div>
@@ -123,25 +135,25 @@ export const LandPag=()=>{
                 <div className={styles.step5}>
                     <img className={styles.icon_5} src={li5}alt="Фото 5"/>
                     <p className={styles.ts_5}>
-                    На основании результата интерьвью команда формерует ТЗ .
+                        На основании результата интерьвью команда формерует ТЗ .
                     </p>
                 </div>
                 <div className={styles.step6}>
                     <img className={styles.icon_6} src={li6}alt="Фото 6"/>
                     <p className={styles.ts_6}>
-                    Далее  команда студентов начинает разработку заказа.
+                        Далее  команда студентов начинает разработку заказа.
                     </p>
                 </div>
                 <div className={styles.step7}>
                     <img className={styles.icon_6} src={li7}alt="Фото 6"/>
                     <p className={styles.ts_7}>
-                    Как только продукт уже готов его отдают заказчику, для внедрения в производство.
+                        Как только продукт уже готов его отдают заказчику, для внедрения в производство.
                     </p>
                 </div>
                 <div className={styles.step8}>
                     <img className={styles.icon_6} src={li8}alt="Фото 6"/>
                     <p className={styles.ts_8}>
-                    Завершающим этапом является защита дипломной работы.
+                        Завершающим этапом является защита дипломной работы.
                     </p>
                 </div>
                 </div>
@@ -174,21 +186,45 @@ export const LandPag=()=>{
                         <p className={styles.text_s2}>
                            Заполните форму и мы свяжемся с вами в ближайшее время
                         </p>
-                        <input type="text" name="fiozak" className={`${styles.input} ${styles.input_fio}`} placeholder=" ФИО"/>
-                        <input type="text" name="phon" className={`${styles.input} ${styles.input_phon}`} placeholder=" +7"/>
-                        <textarea type="textarea" name="mass" className={`${styles.textarea} ${styles.textarea_mass}`} placeholder=" Расскажите о задании"/>
-                        <div className={styles.check_box}>
-                        <input type="checkbox"  className={styles.custom_checkbox} id="check" name="check" defaultChecked/>
-                        <label htmlFor="check"><p className={styles.text_chex}> Я согласен с <span className={styles.text_a}>Политикой обработки персональных даных.</span></p></label>
-                        
-                    </div>
-                    <button  type ="button" className={styles.btn}><span className={styles.txakk}>Отправить</span></button> 
+
+                        <Formik
+                            initialValues={{  
+                                name: "Иванов Иван Иванович",
+                                phone: "+7(961)994-22-11",
+                                description: "Разработать сайт для детского садика",
+                                policy: true
+                            }}
+                            validationSchema={Yup.object().shape({
+                                name : Yup.string().required("Обязательно!"),
+                                phone: Yup.string().required("Отязательно"),
+                                description: Yup.string().required("Отязательно"),
+                                policy: Yup.bool().oneOf([true], 'Field must be checked'),
+
+                            })}
+                            onSubmit={handleSubmit}        
+                        >
+                            <Form className={styles.form}>
+                                <Field className={styles.input_fio} placeholder="ФИО" name="name"/> 
+                                <ErrorMessage name="name" /> 
+                                <Field className={styles.input_phon} placeholder="Тел." name="phone" type="phone" />
+                                <ErrorMessage name="phone" />
+                                <Field className={styles.textarea_mass} placeholder="Информация о проекте" name="description" as="textarea"/>
+                                <ErrorMessage name="description" /> 
+                                <div className={styles.check_box}>
+                                    <Field type="checkbox"  className={styles.custom_checkbox} id="check" name="policy" />
+                                    <label htmlFor="check"><p className={styles.text_chex}> Я согласен с <span className={styles.text_a}>Политикой обработки персональных даных.</span></p></label>
+                                    <ErrorMessage name="policy" /> 
+                                </div>
+                                <button type ="submit"
+                                    className={styles.btn}><span className={styles.txakk}>Отправить</span>
+                                </button> 
+                            </Form>
+                        </Formik>
                     </div>
                     </div>
                 </div>
             </div>
-
-            <FooterLP></FooterLP>
+            <FooterLP/>
         </div>
     )
 }

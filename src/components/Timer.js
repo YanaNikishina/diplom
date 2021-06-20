@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from '../modules/dashboard.module.css'
 
 export const Timer =() =>{
 
     //1
+    useEffect(()=>{
 
-    var countDownDate = new Date("June 23, 2021 00:00:00").getTime();
+        var countDownDate = new Date("June 23, 2021 00:00:00").getTime();
         var x = setInterval(function() {
         
             var now = new Date().getTime();
@@ -64,6 +65,12 @@ export const Timer =() =>{
       } 
       
     }, 1000);
+    return()=>{
+        clearInterval(x)
+        clearInterval(y)
+    }   
+    },[])
+    
 
 
     return(

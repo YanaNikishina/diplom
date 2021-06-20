@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Avatar1 from '../img/Avatar1.svg'
 import styles from '../modules/dashboard.module.css'
-
+import { ProfileContext } from './ProfileWrapper'
 
 
 export const Card =() =>{
+
+    const profile = useContext(ProfileContext)
+    console.log(profile)
 
     class Card  extends React.Component{
         render(){
@@ -26,8 +29,8 @@ export const Card =() =>{
 
     return(
         <div className={styles.card}>
-        <Card h1='Твой дипломный руководитель' name='Иванов Иван Иванович' phone ='+7 000 000 00 00'/>
-        <Card h1='Твой классный руководитель' name='Иванов Иван Иванович' phone ='+7 000 000 00 00'/>
+        <Card h1='Твой дипломный руководитель' name={'Иванов Иван Иванович'} phone ='+7 000 000 00 00'/>
+        <Card h1='Твой классный руководитель' name={profile.group.classroom_teacher.name} phone ={profile.group.classroom_teacher.phone}/>
         <Card h1='Твой зав. отделения' name='Иванов Иван Иванович' phone ='+7 000 000 00 00'/>
         </div>
     )

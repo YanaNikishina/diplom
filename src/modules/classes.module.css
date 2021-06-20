@@ -1,0 +1,19 @@
+.h1{
+    color: #02014A;
+    font-size: 28px;
+    font-weight:bold;
+    text-align: left;
+}
+.btn{
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding:5px 15px 8px;
+    color: #FFFFFF;
+    background-color:#6E17F2 ;
+    outline: none;
+    font-size: 15px;
+}
+.hidden{
+    display: none;
+}

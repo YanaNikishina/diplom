@@ -1,4 +1,4 @@
-import React,{ useState } from 'react'
+import React,{ useState,useContext } from 'react'
 import {Link} from 'react-router-dom'
 import styles from '../modules/menu.module.css'
 import Avatar2 from '../img/Avatar2.svg'
@@ -12,8 +12,10 @@ import inf from '../img/ins.svg'
 import faq from '../img/faq.svg'
 import news from '../img/news.svg'
 import ProgressBar from "@ramonak/react-progress-bar"
-
+import {ProfileContext} from '../components/ProfileWrapper'
 export const Menu =()=>{
+    const profile = useContext(ProfileContext)
+    console.log(profile)
     const [cat, setCat] = useState(false)
 
     return(
@@ -30,8 +32,8 @@ export const Menu =()=>{
                     <div className={styles.header_menu}>
                         <img className={styles.percent_img}src ={Avatar2} alt="Photos"/>
                         <div className={styles.nav_text}>
-                            <p className={styles.header_text1}>Никишина Яна</p>
-                            <p className={styles.header_text2}>ПОКС-42</p>
+                            <p className={styles.header_text1}>{profile.name}</p>
+                            <p className={styles.header_text2}>{profile.group.name}</p>
                         </div>
                         <div className={styles.project_icons}>
                             <Link className={styles.link} to ={'/pages/Avtorisation'}>
@@ -45,7 +47,7 @@ export const Menu =()=>{
                         
                     </div>
                     <div className={styles.li_menu}>
-                        <Link className={styles.link} to ={'/pages/Dashboard'}>
+                        <Link className={styles.link} to ={'/'}>
                             <div className={styles.dash}>
                                 <img className={styles.dash_icon}src ={dash} alt="Photos"/>    
                                 <p className={styles.dash_text}>Дашборд</p>
